@@ -101,6 +101,8 @@ function start(events) {
         console.log(`Cannot read type: ${type}`);
         break;
     }
+
+    window.scrollTo(0, document.body.scrollHeight);
   }
 
   addEventListener("keydown", loop);
