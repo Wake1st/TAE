@@ -2,13 +2,17 @@
   font-family: celticGaramond2;
   src: url(/assets/celticGaramond2nd/CELTG___.TTF);
 }
+@font-face {
+  font-family: jimNightshade;
+  src: url(/assets/jimNightshade/JimNightshade-Regular.ttf);
+}
 
 :root {
   --bg-base-color: #141c22;
-  --bg-strong-support-color: #465c6e;
+  --bg-strong-support-color: #465c6e40;
   --bg-weak-support-color: #6e6e6e;
   --bg-strong-challenger-color: #704c15;
-  --bg-weak-challenger-color: #332817;
+  --bg-weak-challenger-color: #33281790;
 
   --ft-base-color: #479fba;
   --ft-strong-support-color: #72dcfd;
@@ -20,8 +24,8 @@
 body {
   background-color: var(--bg-base-color);
   color: var(--ft-strong-support-color);
-  font-family: celticGaramond2;
-  letter-spacing: 0.12rem;
+  font-family: jimNightshade;
+  letter-spacing: 0.1rem;
   margin: 0;
 }
 
@@ -39,6 +43,7 @@ h1,
 h2,
 h3,
 h4 {
+  font-family: celticGaramond2;
   color: var(--ft-base-color);
 }
 
@@ -114,6 +119,7 @@ h2 {
 }
 
 .choice-container {
+  font-family: celticGaramond2;
   color: var(--ft-weak-challenger-color);
   background-color: var(--bg-weak-challenger-color);
   padding: 0.25rem;
@@ -130,6 +136,7 @@ h2 {
 
 .choice-summary {
   padding: 0.5rem;
+  letter-spacing: 0.14rem;
 }
 
 .greater-border {
@@ -152,9 +159,13 @@ h2 {
 
 .naration {
   padding: 0.25rem;
+  letter-spacing: 0.06rem;
+  font-size: 24px;
+  line-height: 1.4;
 }
 
 .scripture {
+  font-family: celticGaramond2;
   background-color: var(--bg-weak-challenger-color);
   color: var(--ft-weak-challenger-color);
   padding: 1rem;
