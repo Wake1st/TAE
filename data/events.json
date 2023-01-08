@@ -1,0 +1,85 @@
+[
+  {
+    "id": 0,
+    "wait": 1,
+    "type": "chapter",
+    "text": "Begotten Home"
+  },
+  {
+    "id": 1,
+    "wait": 4,
+    "type": "naration",
+    "text": "Stones grind underneath the frail ship as it beaches upon the artic shores. This place is stark, yet full of malice - it air itself whips you with frozen tendrils; this place will be your new home."
+  },
+  {
+    "id": 2,
+    "wait": 4,
+    "type": "naration",
+    "text": "Nearly 4 months have passed since you fled your home, you disciples fervent, but fearful. The old country had no room for new ideas - only old men and thier old, decrepit ways: too afraid to abandon thier temples; too stubborn to reason with."
+  },
+  {
+    "id": 3,
+    "wait": 4,
+    "type": "naration",
+    "text": "But in this place, hope can begin. No longer will you be bound by outdated laws and corrupt rulers; you shall build a new world, and a new dawn shall kiss upon your brows such wonders as yet to be known by all the world."
+  },
+  {
+    "id": 4,
+    "wait": 6,
+    "type": "scripture",
+    "text": "And so they sailed till they had met with the land again, far north of their home."
+  },
+  {
+    "id": 5,
+    "wait": 36,
+    "type": "decision",
+    "text": "Where will you build your temple?",
+    "choices": [
+      {
+        "nextId": 100,
+        "name": "By Water",
+        "summary": "You shall praise the sea; dance with it's rage, and fear its frozen depths."
+      },
+      {
+        "nextId": 200,
+        "name": "By Wood",
+        "summary": "You shall praise the forest; meditate with nature, and find peace amongst stoic rock and timber."
+      },
+      {
+        "nextId": 300,
+        "name": "By Windswept Hills",
+        "summary": "You shall praise the earth; strike hard the rock, and cradle treasures found deep below."
+      }
+    ]
+  },
+  {
+    "id": 100,
+    "wait": 4,
+    "type": "scripture",
+    "text": "Upon finding shore, they built a temple to worship the very sea which brought them to this promised land."
+  },
+  {
+    "id": 101,
+    "wait": 4,
+    "type": "naration",
+    "text": "You make your temple of stone and mud; the insides are dark and damp, but they are yours. As your followers settle into the area, some of the disciples begin talking amongst themselves, wondering what they should do next."
+  },
+  {
+    "id": 200,
+    "wait": 4,
+    "type": "scripture",
+    "text": "They traveled until they reached a forest; there they build a place of worship; 'Come, let us be still like the trees', they said to one another."
+  },
+  {
+    "id": 300,
+    "wait": 4,
+    "type": "scripture",
+    "text": "They marched upon hills, and saw that there were great riches burried underneath them."
+  },
+  {
+    "id": -1,
+    "wait": 60,
+    "type": "reset",
+    "text": "You have served well."
+  }
+]

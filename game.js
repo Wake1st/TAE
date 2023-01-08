@@ -1,50 +1,110 @@
-const timelineItemContainer = document.querySelector("#timeline-items");
-const currentChoiceContainer = {
-  title: document.querySelector("#current-setup > h3"),
-  description: document.querySelector("#current-description"),
-  decision: document.querySelector("#current-decision > h3"),
-  choices: document.querySelector("#choices"),
-};
+let eventIndex = 0;
 
-function createChoiceContainer(titleText, summaryText) {
+const timelineItems = document.querySelector("#timeline-items");
+const currentDecision = document.querySelector("#current-decision");
+const decisionTitle = document.querySelector("#decision-title");
+const choicesContainer = document.querySelector("#choices");
+
+function createChoiceContainer({ nextId, name, summary }) {
   const choiceContainer = document.createElement("div");
-  const title = document.createElement("h4");
-  const summary = document.createElement("p");
+  choiceContainer.classList.add("choice-container");
 
-  choiceContainer.className = "choice-container";
-  title.innerHTML = titleText;
-  summary.innerHTML = summaryText;
+  choiceContainer.addEventListener("click", () => {
+    makeDecision(nextId);
+    currentDecision.classList.add("hidden");
+  });
 
-  choiceContainer.appendChild(title);
-  choiceContainer.appendChild(summary);
+  const titleEl = document.createElement("h4");
+  titleEl.classList.add("choice-title");
+  titleEl.innerHTML = name;
+  choiceContainer.appendChild(titleEl);
+
+  if (summary) {
+    const summaryEl = document.createElement("p");
+    summaryEl.classList.add("choice-summary");
+    summaryEl.innerHTML = summary;
+    choiceContainer.appendChild(summaryEl);
+  }
 
   return choiceContainer;
 }
 
-function loadChoice(choice) {
-  console.log(choice);
-  console.log(currentChoiceContainer);
+function displayTimelineItem(text, element, classes) {
+  const el = document.createElement(element);
+  el.innerHTML = text;
+  el.classList.add("timeline-item", ...classes);
+  timelineItems.appendChild(el);
+}
 
-  //  insert current title
-  currentChoiceContainer.title.innerHTML = choice.title;
+function displayReset(text) {
+  const choices = [
+    {
+      nextId: 0,
+      name: "Serve Again...",
+      summary: "and let the harvest be plentiful.",
+    },
+  ];
 
-  //  insert current description
-  currentChoiceContainer.description.innerHTML = null;
-  choice.setup.forEach((text) => {
-    const p = document.createElement("p");
-    p.innerHTML = text;
-    currentChoiceContainer.description.appendChild(p);
-  });
+  displayDecision(text, choices);
+}
+
+function displayDecision(text, choices) {
+  //  show the decision
+  currentDecision.classList.remove("hidden");
 
   //  insert decision
-  currentChoiceContainer.decision.innerHTML = choice.decision;
+  decisionTitle.innerHTML = text;
 
   //  insert choices
-  currentChoiceContainer.choices.innerHTML = null;
-  choice.choices.forEach(({ name, summary }) => {
-    const con = createChoiceContainer(name, summary);
-    currentChoiceContainer.choices.appendChild(con);
+  choicesContainer.innerHTML = null;
+  choices.forEach((choice) => {
+    const con = createChoiceContainer(choice);
+    choicesContainer.appendChild(con);
   });
+}
+
+function start(events) {
+  function loop() {
+    if (eventIndex === 0) {
+      timelineItems.innerHTML = null;
+      choicesContainer.innerHTML = null;
+    }
+
+    let event = events.find(({ id }) => id === eventIndex);
+
+    if (!event) {
+      event = events.find(({ id }) => id === -1);
+    }
+
+    const { type, text, choices } = event;
+
+    switch (type) {
+      case "chapter":
+        displayTimelineItem(text, "h3", ["chapter"]);
+        eventIndex++;
+        break;
+      case "naration":
+        displayTimelineItem(text, "p", ["naration"]);
+        eventIndex++;
+        break;
+      case "scripture":
+        displayTimelineItem(text, "p", ["scripture"]);
+        eventIndex++;
+        break;
+      case "decision":
+        displayDecision(text, choices);
+        break;
+      case "reset":
+        displayReset(text);
+        break;
+      default:
+        console.log(`Cannot read type: ${type}`);
+        break;
+    }
+  }
+
+  addEventListener("keydown", loop);
+  addEventListener("click", loop);
 }
 
 (async function () {
@@ -52,8 +112,12 @@ function loadChoice(choice) {
     return fetch(path).then((response) => response.json());
   }
 
-  const choices = await readJson("./data/choices.json");
+  const events = await readJson("./data/events.json");
 
-  //  start the narative
-  loadChoice(choices[0]);
+  //  start the game loop
+  start(events);
 })();
+
+function makeDecision(id) {
+  eventIndex = id;
+}
