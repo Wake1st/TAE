@@ -1,4 +1,4 @@
-# Holy Harvest
+# Sacred Harvest
 
 ## Resources
 
