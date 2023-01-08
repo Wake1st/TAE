@@ -1,0 +1,164 @@
+@font-face {
+  font-family: celticGaramond2;
+  src: url(/assets/celticGaramond2nd/CELTG___.TTF);
+}
+
+:root {
+  --bg-base-color: #141c22;
+  --bg-strong-support-color: #465c6e;
+  --bg-weak-support-color: #6e6e6e;
+  --bg-strong-challenger-color: #704c15;
+  --bg-weak-challenger-color: #332817;
+
+  --ft-base-color: #479fba;
+  --ft-strong-support-color: #72dcfd;
+  --ft-weak-support-color: #6e6e6e;
+  --ft-strong-challenger-color: #6b3500;
+  --ft-weak-challenger-color: #bf772f;
+}
+
+body {
+  background-color: var(--bg-base-color);
+  color: var(--ft-strong-support-color);
+
+  font-family: celticGaramond2;
+  letter-spacing: 0.12rem;
+
+  margin: 0;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  height: 14vh;
+
+  background-color: var(--bg-base-color);
+}
+
+main {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: stretch;
+  height: 45vh;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  height: 40vh;
+  border-style: double none none;
+  border-width: 1rem;
+  background-color: var(--bg-base-color);
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: var(--ft-base-color);
+}
+
+h1 {
+  font-size: 4.2rem;
+  margin-block-start: 0.4em;
+  margin-block-end: 0.4em;
+  letter-spacing: 0.2rem;
+}
+/* 
+h2 {
+  font-size: 2.6rem;
+  letter-spacing: 0.2rem;
+  margin-block-start: 0.2em;
+  margin-block-end: 0.2em;
+} */
+
+h3 {
+  font-size: 1.4rem;
+  margin-block-start: 0.8em;
+  margin-block-end: 0.8em;
+}
+
+h4 {
+  font-size: 1.1rem;
+  line-height: 1;
+  margin-block-start: 0.4em;
+  margin-block-end: 0.4em;
+}
+
+p {
+  font-size: 14px;
+  margin-block-start: 0.4em;
+  margin-block-end: 0.4em;
+}
+
+#timeline {
+  display: flex;
+  flex-direction: column;
+  width: 42rem;
+  margin: 0 auto;
+  padding: 0 1rem 2rem;
+  border-style: double double none;
+  border-width: 0.5rem;
+  text-align: center;
+}
+
+#timeline-title {
+  text-align: center;
+}
+
+.timelint-item {
+  padding: 0.5rem;
+  text-align: left;
+}
+
+#current-choice {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 1rem;
+  width: 74rem;
+}
+
+/* #current-choice > h2 {
+  text-align: center;
+  flex-basis: 100%;
+} */
+
+#current-setup {
+  flex-basis: 50%;
+}
+
+#current-setup > h3 {
+  text-align: center;
+}
+
+#current-decision {
+  flex-basis: 50%;
+}
+
+#current-decision > h3 {
+  text-align: center;
+}
+
+.celtic-border {
+  border-color: var(--ft-weak-challenger-color);
+}
+
+.choice-container {
+  color: var(--ft-weak-challenger-color);
+  background-color: var(--bg-weak-challenger-color);
+  margin-bottom: 0.25rem;
+  padding: 0.25rem;
+  padding-left: 1rem;
+}
+
+.choice-container > h4 {
+  color: var(--bg-strong-challenger-color);
+}
+
+.choice-container > p {
+  padding-left: 0.5rem;
+}
