@@ -9,7 +9,7 @@
     "id": 1,
     "wait": 4,
     "type": "naration",
-    "text": "Stones grind underneath the frail ship as it beaches upon the artic shores. This place is stark, yet full of malice - it air itself whips you with frozen tendrils; this place will be your new home."
+    "text": "Stones grind underneath the frail ship as it beaches upon the artic shores. This place is stark, yet full of malice - the air itself whips you with frozen tendrils; this place will be your new home."
   },
   {
     "id": 2,
@@ -62,7 +62,127 @@
     "id": 101,
     "wait": 4,
     "type": "naration",
-    "text": "You make your temple of stone and mud; the insides are dark and damp, but they are yours. As your followers settle into the area, some of the disciples begin talking amongst themselves, wondering what they should do next."
+    "text": "You make your temple of stone and mud; the insides are dark and damp, but they are yours."
+  },
+  {
+    "id": 102,
+    "wait": 4,
+    "type": "naration",
+    "text": "As your followers settle into the area, some of the disciples begin talking amongst themselves, wondering what they should do next."
+  },
+  {
+    "id": 103,
+    "wait": 4,
+    "type": "scripture",
+    "text": "Now there were those in the multitude who began to worry. 'How shall we eat', would say one. 'What shall we do when winter comes', would say another."
+  },
+  {
+    "id": 104,
+    "wait": 36,
+    "type": "decision",
+    "text": "What shall your people do?",
+    "choices": [
+      {
+        "nextId": 110,
+        "name": "Fish",
+        "summary": "You shall live off the blessings of the sea."
+      },
+      {
+        "nextId": 160,
+        "name": "Fast",
+        "summary": "You shall grow patience and humility."
+      }
+    ]
+  },
+  {
+    "id": 110,
+    "wait": 4,
+    "type": "scripture",
+    "text": "And the prophet commanded them, 'Are you so quick to forget the sea and it's blessings? Surely there is one among you who can fish.'"
+  },
+  {
+    "id": 111,
+    "wait": 4,
+    "type": "naration",
+    "text": "Your followers feel encouraged, and with new found energy, begin to fish with abundance."
+  },
+  {
+    "id": 112,
+    "wait": 4,
+    "type": "naration",
+    "text": "Learning to fish the icy sea is hard - to be hungry makes it harder. Some of your followers suggest setting traps for shellfish, but others refuse to eat such animals, believing them to be unclean."
+  },
+  {
+    "id": 113,
+    "wait": 4,
+    "type": "scripture",
+    "text": "Now there were those who sought to eat the things which crawled upon the sea floor, for they had difficulty catching fish. But to many, these creatures were unpure, and to eat them would be to blaspheme their gods."
+  },
+  {
+    "id": 114,
+    "wait": 36,
+    "type": "decision",
+    "text": "What is clean and unclean?",
+    "choices": [
+      {
+        "nextId": 120,
+        "name": "All Things are a Blessing",
+        "summary": "You shall eat those things which crawl."
+      },
+      {
+        "nextId": 130,
+        "name": "Be Pure and Prudent",
+        "summary": "You shall not partake in those things which cannot swim."
+      }
+    ]
+  },
+  {
+    "id": 160,
+    "wait": 4,
+    "type": "scripture",
+    "text": "And the prophet corrected them, 'You are like children - wining with an open mouth; close thy mouth and open thy mind to the will of heaven. You shall feast on holy thoughts. You shall fill your spirit, which is eternal, not your stomach, which will rot like the food you long for.'"
+  },
+  {
+    "id": 161,
+    "wait": 4,
+    "type": "naration",
+    "text": "Your followers feel guilty and ashamed; some tear their garmets and pray for forgiveness; some sit in silence, praying..."
+  },
+  {
+    "id": 162,
+    "wait": 4,
+    "type": "naration",
+    "text": "and thinking..."
+  },
+  {
+    "id": 163,
+    "wait": 4,
+    "type": "naration",
+    "text": "As the days pass by, the air grows colder; larger blocks of ice are filling the sea."
+  },
+  {
+    "id": 164,
+    "wait": 4,
+    "type": "naration",
+    "text": "Some of your followers are discussing storing up food for the winter."
+  },
+  {
+    "id": 165,
+    "wait": 36,
+    "type": "decision",
+    "text": "How shall you prepare for the winter?",
+    "choices": [
+      {
+        "nextId": 170,
+        "name": "Wisdom",
+        "summary": "You shall be wise and save food for when there is none."
+      },
+      {
+        "nextId": 180,
+        "name": "Faith",
+        "summary": "You shall have faith that the heavens will provide."
+      }
+    ]
   },
   {
     "id": 200,
