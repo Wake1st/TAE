@@ -10,3 +10,7 @@
 ### Font
 
 - Celtic Garamond 2nd: https://www.dafont.com/font-comment.php?file=celtic_garamond_2nd
+
+### Icons
+
+- Harvest free icon: https://www.flaticon.com/free-icon/harvest_3538103?term=harvest&page=1&position=10&origin=search&related_id=3538103

@@ -38,17 +38,35 @@
       {
         "nextId": 100,
         "name": "By Water",
-        "summary": "You shall praise the sea; dance with it's rage, and fear its frozen depths."
+        "summary": "You shall praise the sea; dance with it's rage, and fear its frozen depths.",
+        "consequences": [
+          {
+            "key": "resolve",
+            "value": 2
+          }
+        ]
       },
       {
-        "nextId": 200,
+        "nextId": 400,
         "name": "By Wood",
-        "summary": "You shall praise the forest; meditate with nature, and find peace amongst stoic rock and timber."
+        "summary": "You shall praise the forest; meditate with nature, and find peace amongst stoic rock and timber.",
+        "consequences": [
+          {
+            "key": "contentment",
+            "value": 2
+          }
+        ]
       },
       {
-        "nextId": 300,
+        "nextId": 700,
         "name": "By Windswept Hills",
-        "summary": "You shall praise the earth; strike hard the rock, and cradle treasures found deep below."
+        "summary": "You shall praise the earth; strike hard the rock, and cradle treasures found deep below.",
+        "consequences": [
+          {
+            "key": "resolve",
+            "value": 2
+          }
+        ]
       }
     ]
   },
@@ -83,104 +101,42 @@
     "text": "What shall your people do?",
     "choices": [
       {
-        "nextId": 110,
+        "nextId": 200,
         "name": "Fish",
-        "summary": "You shall live off the blessings of the sea."
+        "summary": "You shall live off the blessings of the sea.",
+        "consequences": [
+          {
+            "key": "contentment",
+            "value": 1
+          },
+          {
+            "key": "faith",
+            "value": 1
+          },
+          {
+            "key": "contentment",
+            "value": -1
+          }
+        ]
       },
       {
-        "nextId": 160,
+        "nextId": 300,
         "name": "Fast",
-        "summary": "You shall grow patience and humility."
-      }
-    ]
-  },
-  {
-    "id": 110,
-    "wait": 4,
-    "type": "scripture",
-    "text": "And the prophet commanded them, 'Are you so quick to forget the sea and it's blessings? Surely there is one among you who can fish.'"
-  },
-  {
-    "id": 111,
-    "wait": 4,
-    "type": "naration",
-    "text": "Your followers feel encouraged, and with new found energy, begin to fish with abundance."
-  },
-  {
-    "id": 112,
-    "wait": 4,
-    "type": "naration",
-    "text": "Learning to fish the icy sea is hard - to be hungry makes it harder. Some of your followers suggest setting traps for shellfish, but others refuse to eat such animals, believing them to be unclean."
-  },
-  {
-    "id": 113,
-    "wait": 4,
-    "type": "scripture",
-    "text": "Now there were those who sought to eat the things which crawled upon the sea floor, for they had difficulty catching fish. But to many, these creatures were unpure, and to eat them would be to blaspheme their gods."
-  },
-  {
-    "id": 114,
-    "wait": 36,
-    "type": "decision",
-    "text": "What is clean and unclean?",
-    "choices": [
-      {
-        "nextId": 120,
-        "name": "All Things are a Blessing",
-        "summary": "You shall eat those things which crawl."
-      },
-      {
-        "nextId": 130,
-        "name": "Be Pure and Prudent",
-        "summary": "You shall not partake in those things which cannot swim."
-      }
-    ]
-  },
-  {
-    "id": 160,
-    "wait": 4,
-    "type": "scripture",
-    "text": "And the prophet corrected them, 'You are like children - wining with an open mouth; close thy mouth and open thy mind to the will of heaven. You shall feast on holy thoughts. You shall fill your spirit, which is eternal, not your stomach, which will rot like the food you long for.'"
-  },
-  {
-    "id": 161,
-    "wait": 4,
-    "type": "naration",
-    "text": "Your followers feel guilty and ashamed; some tear their garmets and pray for forgiveness; some sit in silence, praying..."
-  },
-  {
-    "id": 162,
-    "wait": 4,
-    "type": "naration",
-    "text": "and thinking..."
-  },
-  {
-    "id": 163,
-    "wait": 4,
-    "type": "naration",
-    "text": "As the days pass by, the air grows colder; larger blocks of ice are filling the sea."
-  },
-  {
-    "id": 164,
-    "wait": 4,
-    "type": "naration",
-    "text": "Some of your followers are discussing storing up food for the winter."
-  },
-  {
-    "id": 165,
-    "wait": 36,
-    "type": "decision",
-    "text": "How shall you prepare for the winter?",
-    "choices": [
-      {
-        "nextId": 170,
-        "name": "Wisdom",
-        "summary": "You shall be wise and save food for when there is none."
-      },
-      {
-        "nextId": 180,
-        "name": "Faith",
-        "summary": "You shall have faith that the heavens will provide."
+        "summary": "You shall grow patience and humility.",
+        "consequences": [
+          {
+            "key": "contentment",
+            "value": -1
+          },
+          {
+            "key": "resolve",
+            "value": 1
+          },
+          {
+            "key": "faith",
+            "value": 1
+          }
+        ]
       }
     ]
   },
@@ -188,13 +144,236 @@
     "id": 200,
     "wait": 4,
     "type": "scripture",
-    "text": "They traveled until they reached a forest; there they build a place of worship; 'Come, let us be still like the trees', they said to one another."
+    "text": "And the prophet commanded them, 'Are you so quick to forget the sea and it's blessings? Surely there is one among you who can fish.'"
+  },
+  {
+    "id": 201,
+    "wait": 4,
+    "type": "naration",
+    "text": "Your followers feel encouraged, and with new found energy, begin to fish with abundance."
+  },
+  {
+    "id": 202,
+    "wait": 4,
+    "type": "naration",
+    "text": "Learning to fish the icy sea is hard - to be hungry makes it harder. Some of your followers suggest setting traps for shellfish, but others refuse to eat such animals, believing them to be unclean."
+  },
+  {
+    "id": 203,
+    "wait": 4,
+    "type": "scripture",
+    "text": "Now there were those who sought to eat the things which crawled upon the sea floor, for they had difficulty catching fish. But to many, these creatures were unpure, and to eat them would be to blaspheme their gods."
+  },
+  {
+    "id": 204,
+    "wait": 36,
+    "type": "decision",
+    "text": "What is clean and unclean?",
+    "choices": [
+      {
+        "nextId": 210,
+        "name": "All Things are a Blessing",
+        "summary": "You shall eat all which the sea provides.",
+        "consequences": [
+          {
+            "key": "contentment",
+            "value": 1
+          },
+          {
+            "key": "faith",
+            "value": -1
+          },
+          {
+            "key": "resolve",
+            "value": -1
+          }
+        ]
+      },
+      {
+        "nextId": 260,
+        "name": "Be Pure and Prudent",
+        "summary": "You shall not partake in those things which cannot swim.",
+        "consequences": [
+          {
+            "key": "contentment",
+            "value": -1
+          },
+          {
+            "key": "faith",
+            "value": 1
+          },
+          {
+            "key": "resolve",
+            "value": -1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 210,
+    "wait": 4,
+    "type": "scripture",
+    "text": "And the prophet spoke, 'Have you become so self-righteous that you reject the blessing that the sea has given? Let any who seeks starvation find humility instead, but those who are thankful shall be filled in their stomachs and their souls."
+  },
+  {
+    "id": 211,
+    "wait": 4,
+    "type": "naration",
+    "text": "There was more food to eat, and many felt rejuvinated by the new found blessings."
+  },
+  {
+    "id": 212,
+    "wait": 4,
+    "type": "naration",
+    "text": "...but not all. Some are wispering amongst themselves."
+  },
+  {
+    "id": 260,
+    "wait": 4,
+    "type": "scripture",
+    "text": "The prophet warned them of their greed: 'Do you wish to craw upon your bellies like currsed things? Crawl! Those who eat of unclean things shall be themselves unclean."
+  },
+  {
+    "id": 261,
+    "wait": 4,
+    "type": "naration",
+    "text": "While many feel assured in their piety, others grown with hunger."
+  },
+  {
+    "id": 262,
+    "nextId": 303,
+    "wait": 4,
+    "type": "naration",
+    "text": "The fishing continues, and so do the doubts of amongst your flock."
   },
   {
     "id": 300,
     "wait": 4,
     "type": "scripture",
+    "text": "And the prophet corrected them, 'You are like children - wining with an open mouth; close thy mouth and open thy mind to the will of heaven. You shall feast on holy thoughts. You shall fill your spirit, which is eternal, not your stomach, which will rot like the food you long for.'"
+  },
+  {
+    "id": 301,
+    "wait": 4,
+    "type": "naration",
+    "text": "Your followers feel guilty and ashamed; some tear their garmets and pray for forgiveness; some sit in silence, praying..."
+  },
+  {
+    "id": 302,
+    "wait": 4,
+    "type": "naration",
+    "text": "and thinking..."
+  },
+  {
+    "id": 303,
+    "wait": 4,
+    "type": "naration",
+    "text": "As the days pass by, the air grows colder; larger blocks of ice are filling the sea."
+  },
+  {
+    "id": 304,
+    "wait": 4,
+    "type": "scripture",
+    "text": "Now the days were growing short, and they new that winter was drawing near. And they were each of them concerned with how they would eat during that time when food is scarce."
+  },
+  {
+    "id": 305,
+    "wait": 4,
+    "type": "naration",
+    "text": "Some of your followers are discussing storing up food for the winter."
+  },
+  {
+    "id": 306,
+    "wait": 36,
+    "type": "decision",
+    "text": "How shall you prepare for the winter?",
+    "choices": [
+      {
+        "nextId": 310,
+        "name": "Wisdom",
+        "summary": "You shall be wise and save food for when there is none.",
+        "consequences": [
+          {
+            "key": "contentment",
+            "value": 2
+          },
+          {
+            "key": "faith",
+            "value": -1
+          }
+        ]
+      },
+      {
+        "nextId": 360,
+        "name": "Faith",
+        "summary": "You shall have faith that the heavens will provide.",
+        "consequences": [
+          {
+            "key": "faith",
+            "value": 1
+          },
+          {
+            "key": "resolve",
+            "value": 1
+          },
+          {
+            "key": "contentment",
+            "value": -1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 310,
+    "wait": 4,
+    "type": "scripture",
+    "text": "So the prophet instructed them to begin storing up what foods they could, so that they would not grow hungry in those times when food is scarce."
+  },
+  {
+    "id": 311,
+    "nextId": 1000,
+    "wait": 4,
+    "type": "naration",
+    "text": "They are relieved, and work hard at saving all that they can for the winter ahead."
+  },
+  {
+    "id": 360,
+    "wait": 4,
+    "type": "scripture",
+    "text": "But the prophet corrected them: 'You foolish children - do you think the sea is afraid of the cold? Is it not still there when spring comes and the waters thaw. Why then do you doubt the sea will still care for you?"
+  },
+  {
+    "id": 361,
+    "wait": 4,
+    "type": "naration",
+    "text": "Some begin to worship - they are assured that the sea shall provide for them when they are in need."
+  },
+  {
+    "id": 362,
+    "nextId": 1000,
+    "wait": 4,
+    "type": "naration",
+    "text": "Others have doubts - there is barely enough now; there will only be less when winter comes."
+  },
+  {
+    "id": 400,
+    "wait": 4,
+    "type": "scripture",
+    "text": "They traveled until they reached a forest; there they build a place of worship; 'Come, let us be still like the trees', they said to one another."
+  },
+  {
+    "id": 700,
+    "wait": 4,
+    "type": "scripture",
     "text": "They marched upon hills, and saw that there were great riches burried underneath them."
+  },
+  {
+    "id": 1000,
+    "wait": 1,
+    "type": "chapter",
+    "text": "Nights Growing Longer"
   },
   {
     "id": -1,

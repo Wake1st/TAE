@@ -1,16 +1,32 @@
 let eventIndex = 0;
 
+let flock = {
+  faith: 5,
+  resolve: 5,
+  contentment: 5,
+};
+
 const timelineItems = document.querySelector("#timeline-items");
 const currentDecision = document.querySelector("#current-decision");
 const decisionTitle = document.querySelector("#decision-title");
 const choicesContainer = document.querySelector("#choices");
 
-function createChoiceContainer({ nextId, name, summary }) {
+function createChoiceContainer({ nextId, name, summary, consequences }) {
   const choiceContainer = document.createElement("div");
   choiceContainer.classList.add("choice-container");
 
   choiceContainer.addEventListener("click", () => {
     makeDecision(nextId);
+
+    //  some decisions just reset the story
+    if (consequences) {
+      const oldFlock = { ...flock };
+      consequences.forEach(({ key, value }) => {
+        oldFlock[key] += value;
+      });
+      flock = { ...flock, ...oldFlock };
+    }
+
     currentDecision.classList.add("hidden");
   });
 
@@ -19,6 +35,7 @@ function createChoiceContainer({ nextId, name, summary }) {
   titleEl.innerHTML = name;
   choiceContainer.appendChild(titleEl);
 
+  //  not everything needs to be summed up
   if (summary) {
     const summaryEl = document.createElement("p");
     summaryEl.classList.add("choice-summary");
@@ -76,7 +93,7 @@ function start(events) {
       event = events.find(({ id }) => id === -1);
     }
 
-    const { type, text, choices } = event;
+    const { type, nextId, text, choices } = event;
 
     switch (type) {
       case "chapter":
@@ -100,6 +117,11 @@ function start(events) {
       default:
         console.log(`Cannot read type: ${type}`);
         break;
+    }
+
+    //  sometimes we skip to another section
+    if (nextId) {
+      eventIndex = nextId;
     }
 
     window.scrollTo(0, document.body.scrollHeight);
