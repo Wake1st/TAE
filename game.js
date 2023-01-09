@@ -12,12 +12,7 @@ let wispers = [
   new Audio("./assets/audio/Wispers3.wav"),
 ];
 
-let chants = [
-  {
-    id: 0,
-    sound: new Audio("./assets/audio/chants/AndSoTheySailed.wav"),
-  },
-];
+let chants;
 
 const timelineItems = document.querySelector("#timeline-items");
 const currentDecision = document.querySelector("#current-decision");
@@ -122,7 +117,6 @@ function playChanting(chantId) {
   const chant = chants.find(({ id }) => id === chantId);
 
   if (chant) {
-    console.log(chant);
     chant.sound.play();
   } else {
     console.error(`could not find change chant with id: ${chantId}`);
@@ -191,6 +185,9 @@ function start(events) {
   }
 
   const events = await readJson("./data/events.json");
+  chants = await readJson("./data/chants.json");
+
+  loadSoundFiles();
 
   //  start the game loop
   start(events);
@@ -198,4 +195,12 @@ function start(events) {
 
 function makeDecision(id) {
   eventIndex = id;
+}
+
+function loadSoundFiles() {
+  const newChants = chants.map((chant) => ({
+    ...chant,
+    sound: new Audio(`./assets/audio/chants/${chant.file}`),
+  }));
+  chants = [...newChants];
 }
