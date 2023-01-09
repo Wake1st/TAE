@@ -6,6 +6,12 @@ let flock = {
   contentment: 5,
 };
 
+let wispers = [
+  new Audio("./assets/audio/Wispers1.wav"),
+  new Audio("./assets/audio/Wispers2.wav"),
+  new Audio("./assets/audio/Wispers3.wav"),
+];
+
 const timelineItems = document.querySelector("#timeline-items");
 const currentDecision = document.querySelector("#current-decision");
 const decisionTitle = document.querySelector("#decision-title");
@@ -88,6 +94,26 @@ function displayDecision(text, choices) {
   });
 }
 
+//  Sound Effects
+function playWispers() {
+  function getRandomInt(max) {
+    return Math.ceil(Math.random() * max);
+  }
+
+  wispers.forEach((wisper) => {
+    //  randomly play
+    if (getRandomInt(2) % 2 === 0) {
+      wisper.volume = Math.random();
+      wisper.play();
+    }
+  });
+}
+
+function playBoom() {}
+
+function playChanting() {}
+
+//  Begin Game
 function start(events) {
   function loop() {
     if (eventIndex === 0) {
@@ -106,14 +132,17 @@ function start(events) {
     switch (type) {
       case "chapter":
         displayTimelineItem(text, "h3", ["chapter", "fade-in-left"]);
+        playBoom();
         eventIndex++;
         break;
       case "naration":
         displayTimelineItem(text, "p", ["naration", "fade-in-down"]);
+        playWispers();
         eventIndex++;
         break;
       case "scripture":
         displayTimelineItem(text, "p", ["scripture", "fade-in"]);
+        playChanting();
         eventIndex++;
         break;
       case "decision":
