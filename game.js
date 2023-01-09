@@ -12,6 +12,13 @@ let wispers = [
   new Audio("./assets/audio/Wispers3.wav"),
 ];
 
+let chants = [
+  {
+    id: 0,
+    sound: new Audio("./assets/audio/chants/AndSoTheySailed.wav"),
+  },
+];
+
 const timelineItems = document.querySelector("#timeline-items");
 const currentDecision = document.querySelector("#current-decision");
 const decisionTitle = document.querySelector("#decision-title");
@@ -111,7 +118,16 @@ function playWispers() {
 
 function playBoom() {}
 
-function playChanting() {}
+function playChanting(chantId) {
+  const chant = chants.find(({ id }) => id === chantId);
+
+  if (chant) {
+    console.log(chant);
+    chant.sound.play();
+  } else {
+    console.error(`could not find change chant with id: ${chantId}`);
+  }
+}
 
 //  Begin Game
 function start(events) {
@@ -127,7 +143,7 @@ function start(events) {
       event = events.find(({ id }) => id === -1);
     }
 
-    const { type, nextId, text, choices } = event;
+    const { type, nextId, text, choices, soundId } = event;
 
     switch (type) {
       case "chapter":
@@ -142,7 +158,7 @@ function start(events) {
         break;
       case "scripture":
         displayTimelineItem(text, "p", ["scripture", "fade-in"]);
-        playChanting();
+        playChanting(soundId);
         eventIndex++;
         break;
       case "decision":
@@ -152,7 +168,7 @@ function start(events) {
         displayReset(text);
         break;
       default:
-        console.log(`Cannot read type: ${type}`);
+        console.error(`Cannot read type: ${type}`);
         break;
     }
 

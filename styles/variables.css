@@ -1,10 +1,10 @@
 @font-face {
   font-family: celticGaramond2;
-  src: url(/assets/celticGaramond2nd/CELTG___.TTF);
+  src: url(/assets/fonts/celticGaramond2nd/CELTG___.TTF);
 }
 @font-face {
   font-family: jimNightshade;
-  src: url(/assets/jimNightshade/JimNightshade-Regular.ttf);
+  src: url(/assets/fonts/jimNightshade/JimNightshade-Regular.ttf);
 }
 
 :root {
