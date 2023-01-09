@@ -27,7 +27,13 @@ function createChoiceContainer({ nextId, name, summary, consequences }) {
       flock = { ...flock, ...oldFlock };
     }
 
-    currentDecision.classList.add("hidden");
+    //  hide decision box
+    currentDecision.classList.remove("fade-in-up");
+    currentDecision.classList.add("fade-out-down");
+
+    //  wipe internals
+    choicesContainer.innerHTML = null;
+    // currentDecision.classList.add("hidden");
   });
 
   const titleEl = document.createElement("h4");
@@ -66,8 +72,10 @@ function displayReset(text) {
 }
 
 function displayDecision(text, choices) {
-  //  show the decision
+  //  show decision box
   currentDecision.classList.remove("hidden");
+  currentDecision.classList.remove("fade-out-down");
+  currentDecision.classList.add("fade-in-up");
 
   //  insert decision
   decisionTitle.innerHTML = text;
@@ -97,15 +105,15 @@ function start(events) {
 
     switch (type) {
       case "chapter":
-        displayTimelineItem(text, "h3", ["chapter"]);
+        displayTimelineItem(text, "h3", ["chapter", "fade-in-left"]);
         eventIndex++;
         break;
       case "naration":
-        displayTimelineItem(text, "p", ["naration"]);
+        displayTimelineItem(text, "p", ["naration", "fade-in-down"]);
         eventIndex++;
         break;
       case "scripture":
-        displayTimelineItem(text, "p", ["scripture"]);
+        displayTimelineItem(text, "p", ["scripture", "fade-in"]);
         eventIndex++;
         break;
       case "decision":
@@ -125,6 +133,7 @@ function start(events) {
     }
 
     window.scrollTo(0, document.body.scrollHeight);
+    setTimeout(window.scrollTo, 2000, 0, document.body.scrollHeight);
   }
 
   addEventListener("keydown", loop);
