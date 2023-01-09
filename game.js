@@ -111,14 +111,14 @@ function playWispers() {
   wispers.forEach((wisper) => {
     //  randomly play
     if (getRandomInt(2) % 2 === 0) {
-      wisper.volume = lerp(0.4, 0.8, Math.random());
+      wisper.volume = lerp(0.6, 0.8, Math.random());
       wisper.play();
     }
   });
 }
 
 function playBoom() {
-  boom.volume = 0.6;
+  boom.volume = 0.4;
   boom.play();
 }
 
@@ -134,7 +134,7 @@ function playChanting(chantId) {
   const chant = chants.find(({ id }) => id === chantId);
 
   if (chant) {
-    chant.sound.volume = 0.6;
+    chant.sound.volume = 0.4;
     chant.sound.play();
   } else {
     console.error(`could not find change chant with id: ${chantId}`);

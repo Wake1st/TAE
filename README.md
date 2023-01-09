@@ -10,6 +10,7 @@
 ### Font
 
 - Celtic Garamond 2nd: https://www.dafont.com/font-comment.php?file=celtic_garamond_2nd
+- Jim Nightshade: https://fonts.google.com/specimen/Jim+Nightshade
 
 ### Icons
 
