@@ -386,7 +386,7 @@
     "id": 404,
     "wait": 36,
     "type": "decision",
-    "text": "How shall you treat the living creatures?",
+    "text": "Who should eat of what?",
     "choices": [
       {
         "nextId": 500,
@@ -464,7 +464,7 @@
     "id": 506,
     "wait": 36,
     "type": "decision",
-    "text": "How shall you treat the living creatures?",
+    "text": "How shall you treat other living creatures?",
     "choices": [
       {
         "nextId": 510,
@@ -663,6 +663,326 @@
     "wait": 4,
     "type": "scripture",
     "text": "They marched upon hills, and saw that there were great riches burried underneath them."
+  },
+  {
+    "id": 701,
+    "wait": 4,
+    "type": "naration",
+    "text": "While the hills themselves provide meager food - there are many caves filled with various fungus and small creatures to catch."
+  },
+  {
+    "id": 702,
+    "wait": 4,
+    "type": "naration",
+    "text": "But the true blessing of these hills is found deep within; precious stones and metals are easily found, and many work tirelessly to carve out every treasure which they can find."
+  },
+  {
+    "id": 703,
+    "wait": 4,
+    "type": "naration",
+    "text": "...so tirelessly, that they begin to loose sleep and go hungry."
+  },
+  {
+    "id": 704,
+    "wait": 4,
+    "type": "scripture",
+    "text": "Now as they began working, they were going without food and rest, and their homes were becomming unclean."
+  },
+  {
+    "id": 705,
+    "wait": 4,
+    "type": "naration",
+    "text": "They discuss amongst themselves who should mine and who should gather and prepare food. Most women wish to remain in the mine, but most men desire them to maintain the home, and leave the labor to themselves."
+  },
+  {
+    "id": 706,
+    "wait": 36,
+    "type": "decision",
+    "text": "How shall you divide the work?",
+    "choices": [
+      {
+        "nextId": 800,
+        "name": "Gender",
+        "summary": "Men to the mines, and women to the home.",
+        "consequences": [
+          {
+            "key": "contentment",
+            "value": -1
+          },
+          {
+            "key": "faith",
+            "value": -1
+          },
+          {
+            "key": "resolve",
+            "value": 1
+          }
+        ]
+      },
+      {
+        "nextId": 900,
+        "name": "Rotation",
+        "summary": "Everyone will have a time to mine and a time to maintain the home.",
+        "consequences": [
+          {
+            "key": "contentment",
+            "value": -1
+          },
+          {
+            "key": "resolve",
+            "value": -1
+          },
+          {
+            "key": "faith",
+            "value": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 800,
+    "wait": 4,
+    "type": "scripture",
+    "text": "And so the Prophet divided them male from female, and spoke unto them, 'Do not the women bear children, and are not those children in need of their mother long after their births? Let us then divide ourselves, and let the men and women serve as they are best suited for.'"
+  },
+  {
+    "id": 801,
+    "wait": 4,
+    "type": "naration",
+    "text": "Many men were content with this; many women were angered - a few even refused to work only in the home. Likewise, there were some men who had no passion or desire to dig, but wished to work other tasks."
+  },
+  {
+    "id": 802,
+    "wait": 4,
+    "type": "naration",
+    "text": "The men become obsessed with digging, and began to value their treasures above food and water. They began to question each others valuables, and coveted the treasures of others."
+  },
+  {
+    "id": 803,
+    "wait": 4,
+    "type": "scripture",
+    "text": "When the men had found many great treasures, they gathered together and compared their riches; and one would say to another, 'Is not my lot more valuable than yours? Why then should we recieve the same portion of food and drink?'"
+  },
+  {
+    "id": 804,
+    "wait": 4,
+    "type": "naration",
+    "text": "More and more they wish to trade with each other, and they argue over whom should arbitrate and decide what each thing is worth."
+  },
+  {
+    "id": 805,
+    "wait": 36,
+    "type": "decision",
+    "text": "Whom shall decide the worth of things?",
+    "choices": [
+      {
+        "nextId": 810,
+        "name": "The Prophet",
+        "summary": "You shall decide the worth of every good and service.",
+        "consequences": [
+          {
+            "key": "contentment",
+            "value": -1
+          },
+          {
+            "key": "faith",
+            "value": 1
+          },
+          {
+            "key": "resolve",
+            "value": -1
+          }
+        ]
+      },
+      {
+        "nextId": 840,
+        "name": "Barter",
+        "summary": "They shall barter in their own way.",
+        "consequences": [
+          {
+            "key": "contentment",
+            "value": -1
+          },
+          {
+            "key": "resolve",
+            "value": 1
+          },
+          {
+            "key": "faith",
+            "value": -1
+          }
+        ]
+      },
+      {
+        "nextId": 870,
+        "name": "The Women",
+        "summary": "The women shall trade what the men find.",
+        "consequences": [
+          {
+            "key": "contentment",
+            "value": 1
+          },
+          {
+            "key": "resolve",
+            "value": -1
+          },
+          {
+            "key": "faith",
+            "value": -1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 810,
+    "wait": 4,
+    "type": "scripture",
+    "text": "'You who follow me do so out of faith,' the Prophet reminded them, 'So then have faith in me, and I shall decide the worth of each stone and morsel, in turn."
+  },
+  {
+    "id": 811,
+    "wait": 4,
+    "type": "naration",
+    "text": "Your followers trust you, and they seek your wisdom and guidance. Bartering for them is difficult, and why you try to keep everyones needs met, there are those who are never happy."
+  },
+  {
+    "id": 812,
+    "nextId": 7000,
+    "wait": 4,
+    "type": "naration",
+    "text": "Some begin to trade in secret, thinking themselves more cunning than you..."
+  },
+  {
+    "id": 840,
+    "wait": 4,
+    "type": "scripture",
+    "text": "But the Prophet scolded them, 'Are you children who cannot discuss without tantrums? Are you animals who cannot reason with each other? Begone then, and behave in a manner which is honerable to the earth."
+  },
+  {
+    "id": 841,
+    "nextId": 7000,
+    "wait": 4,
+    "type": "naration",
+    "text": "While some are satisfied with this arrangement, others feel jaded - they feel abandoned by their leader, and begin to wisper their grievances to each other."
+  },
+  {
+    "id": 870,
+    "wait": 4,
+    "type": "scripture",
+    "text": "And so the Prophet chided the men, 'Is it not enough you must argue with your wives about what your work is worth, but now must argue amongst yourselves? Give your treasures then to the women, and let them decide the worth of your households."
+  },
+  {
+    "id": 871,
+    "nextId": 7000,
+    "wait": 4,
+    "type": "naration",
+    "text": "While some women enjoy the increase in power, others resent the extra duties - now they must deal in food and treasure? And many men were also upset, and they begin to discuss their Prophet in secret..."
+  },
+  {
+    "id": 900,
+    "wait": 4,
+    "type": "scripture",
+    "text": "But the Prophet went before them, with a gem in our hand and a mushroom in another, saying thus: 'Does not the earth provide for our needs, and bless us with such riches? And are the women not able to strike the earth for its blessings? And do the men wish to eat only stones and dirt? We each disire these gifts, but we cannot go without food or rest. Let us then each perform each task in some portion, that we may serve and be served by one another.'"
+  },
+  {
+    "id": 901,
+    "wait": 4,
+    "type": "naration",
+    "text": "And so your followers continue to work the mines, and trade places caring for the home. While they grumble, most are content with this arrangement..."
+  },
+  {
+    "id": 902,
+    "wait": 4,
+    "type": "naration",
+    "text": "...but not all. A few of them begin mine apart from the flock, and they hide their treasures secretly. They begin to demand more food and drink for that which they have mined, and they refuse to do their share of the other chores."
+  },
+  {
+    "id": 903,
+    "wait": 4,
+    "type": "naration",
+    "text": "As their demands increased, so do the calls for justice."
+  },
+  {
+    "id": 904,
+    "wait": 4,
+    "type": "scripture",
+    "text": "Now there were those who refused to do any work, other than digging in the earth, and the others among them sought judgement to be brought down upon them for their laziness."
+  },
+  {
+    "id": 905,
+    "wait": 36,
+    "type": "decision",
+    "text": "How should the slothful be punished.",
+    "choices": [
+      {
+        "nextId": 910,
+        "name": "Banishment",
+        "summary": "They shall not share in the blessings of the earth.",
+        "consequences": [
+          {
+            "key": "contentment",
+            "value": 1
+          },
+          {
+            "key": "faith",
+            "value": 1
+          },
+          {
+            "key": "resolve",
+            "value": -1
+          }
+        ]
+      },
+      {
+        "nextId": 950,
+        "name": "Enslavement",
+        "summary": "They shall work others without treasure.",
+        "consequences": [
+          {
+            "key": "resolve",
+            "value": 2
+          },
+          {
+            "key": "faith",
+            "value": -1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 910,
+    "wait": 4,
+    "type": "scripture",
+    "text": "And so the Prophet cast out the lazy and the selfish, repremanding them; 'You greedy fools! If treasure is all you seek, then let your bellies be full of stone, and you hearts heavy with shame.'"
+  },
+  {
+    "id": 911,
+    "nextId": 7000,
+    "wait": 4,
+    "type": "naration",
+    "text": "Many rejuiced in this justice, but some were conflicted - they did not wish to be separated from their loved ones. A few even left with the banished party, much to the discouragement and mockery of the rest."
+  },
+  {
+    "id": 950,
+    "wait": 4,
+    "type": "scripture",
+    "text": "So the Prophet commanded them to be bond in chains, and they were forced to work without rest and without food or water. They could not keep what they found, but instead had nothing. And so they had nothing to barter with when they were in need."
+  },
+  {
+    "id": 951,
+    "wait": 4,
+    "type": "naration",
+    "text": "Some feel a cathartic enjoyment watching the enslaved work - their pride having brought them so low, but others were dismayed. A few tried to take pity upon them by helping them without asking of anything in return."
+  },
+  {
+    "id": 952,
+    "nextId": 7000,
+    "wait": 4,
+    "type": "naration",
+    "text": "But some accused them of treason, and wispers began to stir amongst them about what should be done to them..."
   },
   {
     "id": 1000,
