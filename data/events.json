@@ -144,7 +144,7 @@
     "id": 200,
     "wait": 4,
     "type": "scripture",
-    "text": "And the prophet commanded them, 'Are you so quick to forget the sea and it's blessings? Surely there is one among you who can fish.'"
+    "text": "And the Prophet commanded them, 'Are you so quick to forget the sea and it's blessings? Surely there is one among you who can fish.'"
   },
   {
     "id": 201,
@@ -214,7 +214,7 @@
     "id": 210,
     "wait": 4,
     "type": "scripture",
-    "text": "And the prophet spoke, 'Have you become so self-righteous that you reject the blessing that the sea has given? Let any who seeks starvation find humility instead, but those who are thankful shall be filled in their stomachs and their souls."
+    "text": "And the Prophet spoke, 'Have you become so self-righteous that you reject the blessing that the sea has given? Let any who seeks starvation find humility instead, but those who are thankful shall be filled in their stomachs and their souls."
   },
   {
     "id": 211,
@@ -224,15 +224,16 @@
   },
   {
     "id": 212,
+    "nextId": 303,
     "wait": 4,
     "type": "naration",
-    "text": "...but not all. Some are wispering amongst themselves."
+    "text": "...but not all. Some still shun this food, and they begin to wisper amongst themselves."
   },
   {
     "id": 260,
     "wait": 4,
     "type": "scripture",
-    "text": "The prophet warned them of their greed: 'Do you wish to craw upon your bellies like currsed things? Crawl! Those who eat of unclean things shall be themselves unclean."
+    "text": "The Prophet warned them of their greed: 'Do you wish to craw upon your bellies like currsed things? Crawl! Those who eat of unclean things shall be themselves unclean."
   },
   {
     "id": 261,
@@ -251,7 +252,7 @@
     "id": 300,
     "wait": 4,
     "type": "scripture",
-    "text": "And the prophet corrected them, 'You are like children - wining with an open mouth; close thy mouth and open thy mind to the will of heaven. You shall feast on holy thoughts. You shall fill your spirit, which is eternal, not your stomach, which will rot like the food you long for.'"
+    "text": "And the Prophet corrected them, 'You are like children - wining with an open mouth; close thy mouth and open thy mind to the will of heaven. You shall feast on holy thoughts. You shall fill your spirit, which is eternal, not your stomach, which will rot like the food you long for.'"
   },
   {
     "id": 301,
@@ -329,7 +330,7 @@
     "id": 310,
     "wait": 4,
     "type": "scripture",
-    "text": "So the prophet instructed them to begin storing up what foods they could, so that they would not grow hungry in those times when food is scarce."
+    "text": "So the Prophet instructed them to begin storing up what foods they could, so that they would not grow hungry in those times when food is scarce."
   },
   {
     "id": 311,
@@ -342,7 +343,7 @@
     "id": 360,
     "wait": 4,
     "type": "scripture",
-    "text": "But the prophet corrected them: 'You foolish children - do you think the sea is afraid of the cold? Is it not still there when spring comes and the waters thaw. Why then do you doubt the sea will still care for you?"
+    "text": "But the Prophet corrected them: 'You foolish children - do you think the sea is afraid of the cold? Is it not still there when spring comes and the waters thaw. Why then do you doubt the sea will still care for you?"
   },
   {
     "id": 361,
@@ -364,6 +365,300 @@
     "text": "They traveled until they reached a forest; there they build a place of worship; 'Come, let us be still like the trees', they said to one another."
   },
   {
+    "id": 401,
+    "wait": 4,
+    "type": "naration",
+    "text": "There is plenty of wood for shelter; you quickly build a grand hall, proud tembers hoisting the temple room high above."
+  },
+  {
+    "id": 402,
+    "wait": 4,
+    "type": "naration",
+    "text": "The forest provides much; wood for shelter and warmth, plenty of plants to gather for food, but there are some who hunt and trap animals, which is not well recieved by all."
+  },
+  {
+    "id": 403,
+    "wait": 4,
+    "type": "scripture",
+    "text": "The place where they settled was abundant in resources, and their needs were met; yet there were those who sought to eat of living flesh, and others who did argue that this was an act of sacrilege."
+  },
+  {
+    "id": 404,
+    "wait": 36,
+    "type": "decision",
+    "text": "How shall you treat the living creatures?",
+    "choices": [
+      {
+        "nextId": 500,
+        "name": "Sacred",
+        "summary": "You shall not eat of any flesh, but from the earth ye shall harvest.",
+        "consequences": [
+          {
+            "key": "contentment",
+            "value": -1
+          },
+          {
+            "key": "resolve",
+            "value": 1
+          },
+          {
+            "key": "faith",
+            "value": 1
+          }
+        ]
+      },
+      {
+        "nextId": 600,
+        "name": "Bounty",
+        "summary": "You shall enjoy all the forest provides.",
+        "consequences": [
+          {
+            "key": "faith",
+            "value": -2
+          },
+          {
+            "key": "contentment",
+            "value": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 500,
+    "wait": 4,
+    "type": "scripture",
+    "text": "But the Prophet chided them; 'Are these creatures not guests here as we are? Curse any whom eats of an animal - they are eating their own kin."
+  },
+  {
+    "id": 501,
+    "wait": 4,
+    "type": "naration",
+    "text": "Some of your followers feel assured in their beliefs; others are ashamed..."
+  },
+  {
+    "id": 502,
+    "wait": 4,
+    "type": "naration",
+    "text": "And a few who feel robbed of their hard work. They wisper their discontent amongst themselves."
+  },
+  {
+    "id": 503,
+    "wait": 4,
+    "type": "naration",
+    "text": "Some time after, a trade caravan arrived, bringing with them animal goods such as milk and eggs, and pelts and meats of wild game."
+  },
+  {
+    "id": 504,
+    "wait": 4,
+    "type": "scripture",
+    "text": "Now after this time there came traders who had much to offer. They brought with them food which came from animals, and pelts of wild game."
+  },
+  {
+    "id": 505,
+    "wait": 4,
+    "type": "naration",
+    "text": "Some argue that having farm animals would be good as a stable source of food, and that the pelts could be made into coats for the winter. Others aregued against this; they believe the animals must be treated as equals and not be treated like livestock."
+  },
+  {
+    "id": 506,
+    "wait": 36,
+    "type": "decision",
+    "text": "How shall you treat the living creatures?",
+    "choices": [
+      {
+        "nextId": 510,
+        "name": "Equals",
+        "summary": "You shall not take of anything from any creature.",
+        "consequences": [
+          {
+            "key": "contentment",
+            "value": -1
+          },
+          {
+            "key": "resolve",
+            "value": 1
+          },
+          {
+            "key": "faith",
+            "value": -1
+          }
+        ]
+      },
+      {
+        "nextId": 550,
+        "name": "Caretakers",
+        "summary": "You shall take only those things which do not harm the animal.",
+        "consequences": [
+          {
+            "key": "faith",
+            "value": -1
+          },
+          {
+            "key": "resolve",
+            "value": -1
+          },
+          {
+            "key": "contentment",
+            "value": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 510,
+    "wait": 4,
+    "type": "scripture",
+    "text": "And again the Prophet chastized them; 'You would not steal a mothers milk from a child? Why then would you do the same to our animal kin? Does not the forest provide for their needs - and this being done without anything taken from us? Have faith, then, that it shall the same for us, but if we forsake it's blessings, may we be stripped bare of our abundance and cover ourselves in piety instead.'"
+  },
+  {
+    "id": 511,
+    "wait": 4,
+    "type": "naration",
+    "text": "Some are assured in their devotion to the forest and its creatures, but others still question this command - longing for their lives before this journey, and wanting those things which are now forbidden to them."
+  },
+  {
+    "id": 512,
+    "nextId": 4000,
+    "wait": 4,
+    "type": "naration",
+    "text": "Some continue to drink milk of the animal and honey from the bee, but in secret. Only gather what they can find in the wild."
+  },
+  {
+    "id": 550,
+    "wait": 4,
+    "type": "scripture",
+    "text": "And the Prophet, upon hearing this, stepped in to instruct them; 'Do we not gather berries and roots, and the seeds of trees and mushrooms found upon the ground? And is this not taking from those living things? But the forest knows our needs and so shares its bounty with us, that we may be blessed and worship in all that we are given.'"
+  },
+  {
+    "id": 551,
+    "wait": 4,
+    "type": "naration",
+    "text": "You flock begins to tend for these animals, caring not harm them or to take when the animal is sick or bearing children. They thrive off these new blessings, even to the dismay of a few."
+  },
+  {
+    "id": 552,
+    "nextId": 4000,
+    "wait": 4,
+    "type": "naration",
+    "text": "But there are rumors of some who are still killing and eating meat, and your followers begin to grow suspicious of each other."
+  },
+  {
+    "id": 600,
+    "wait": 4,
+    "type": "scripture",
+    "text": "And the Prophet spoke thus, 'Do not the foxes and birds of prey hunt other creatures? Let each be thankful with what the forest provides, and be not self righteous, but thankful, that the forest should provide to each according to his needs."
+  },
+  {
+    "id": 601,
+    "wait": 4,
+    "type": "naration",
+    "text": "While thus who hunted celebrate, others are disgusted, and they begin to eat separately, one group not seeking the compony of the other."
+  },
+  {
+    "id": 602,
+    "wait": 4,
+    "type": "naration",
+    "text": "As the weeks go by, your followers grow further and further apart; they begin to bicker at each other, and their bickerings turn to fighting."
+  },
+  {
+    "id": 603,
+    "wait": 4,
+    "type": "naration",
+    "text": "Families and friends are cursing each others names; your flock is at risk of separating."
+  },
+  {
+    "id": 604,
+    "wait": 4,
+    "type": "scripture",
+    "text": "But the people began to argue and shot with each other. Hatred stired within them and they were each becoming like strangers to each other, and there was great mistrust amongst them."
+  },
+  {
+    "id": 605,
+    "wait": 36,
+    "type": "decision",
+    "text": "How shall you keep your flock?",
+    "choices": [
+      {
+        "nextId": 610,
+        "name": "Rejoin",
+        "summary": "They shall unite in dance and feasting!",
+        "consequences": [
+          {
+            "key": "contentment",
+            "value": 2
+          },
+          {
+            "key": "resolve",
+            "value": -1
+          },
+          {
+            "key": "faith",
+            "value": -1
+          }
+        ]
+      },
+      {
+        "nextId": 650,
+        "name": "Rebuke",
+        "summary": "They shall fast and pray for their transgressions",
+        "consequences": [
+          {
+            "key": "faith",
+            "value": 1
+          },
+          {
+            "key": "contentment",
+            "value": -2
+          },
+          {
+            "key": "resolve",
+            "value": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 610,
+    "wait": 4,
+    "type": "scripture",
+    "text": "Yet Prophet forgave them of their sins, and encouraged each to do the same unto those they had wronged. And they prepared a feast together, and played music and danced with each other."
+  },
+  {
+    "id": 611,
+    "wait": 4,
+    "type": "naration",
+    "text": "Many who had fought made amends, and the feast livened the spirits and good tidings amongst them."
+  },
+  {
+    "id": 612,
+    "nextId": 4000,
+    "wait": 4,
+    "type": "naration",
+    "text": "But some from each group did not, and instead met in secret groups that night."
+  },
+  {
+    "id": 650,
+    "wait": 4,
+    "type": "scripture",
+    "text": "Upon hearing of this, the Prophet torn their garments and covered themselves in ash, crying aloud, 'How spoiled we have become, that we should fight over our abundance.'"
+  },
+  {
+    "id": 651,
+    "wait": 4,
+    "type": "naration",
+    "text": "Your flock practiced fasting, and spoke praises of their bounty; they begged the forest for forgiveness, and prayed in solitude from morning to night."
+  },
+  {
+    "id": 652,
+    "nextId": 4000,
+    "wait": 4,
+    "type": "naration",
+    "text": "Yet among the prayers, wispers are being spoken, and discontent is sown into the hearts of many."
+  },
+  {
     "id": 700,
     "wait": 4,
     "type": "scripture",
@@ -371,6 +666,18 @@
   },
   {
     "id": 1000,
+    "wait": 1,
+    "type": "chapter",
+    "text": "Nights Growing Longer"
+  },
+  {
+    "id": 4000,
+    "wait": 1,
+    "type": "chapter",
+    "text": "Nights Growing Longer"
+  },
+  {
+    "id": 7000,
     "wait": 1,
     "type": "chapter",
     "text": "Nights Growing Longer"
