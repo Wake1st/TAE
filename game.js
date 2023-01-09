@@ -14,6 +14,10 @@ let wispers = [
 
 let chants;
 
+let boom = new Audio("./assets/audio/Boom.wav");
+let gong = new Audio("./assets/audio/Gong.wav");
+let ring = new Audio("./assets/audio/Ring.wav");
+
 const timelineItems = document.querySelector("#timeline-items");
 const currentDecision = document.querySelector("#current-decision");
 const decisionTitle = document.querySelector("#decision-title");
@@ -41,7 +45,9 @@ function createChoiceContainer({ nextId, name, summary, consequences }) {
 
     //  wipe internals
     choicesContainer.innerHTML = null;
-    // currentDecision.classList.add("hidden");
+
+    //  make some noise
+    playRing();
   });
 
   const titleEl = document.createElement("h4");
@@ -105,18 +111,30 @@ function playWispers() {
   wispers.forEach((wisper) => {
     //  randomly play
     if (getRandomInt(2) % 2 === 0) {
-      wisper.volume = Math.random();
+      wisper.volume = lerp(0.4, 0.8, Math.random());
       wisper.play();
     }
   });
 }
 
-function playBoom() {}
+function playBoom() {
+  boom.volume = 0.6;
+  boom.play();
+}
+
+function playGong() {
+  gong.play();
+}
+
+function playRing() {
+  ring.play();
+}
 
 function playChanting(chantId) {
   const chant = chants.find(({ id }) => id === chantId);
 
   if (chant) {
+    chant.sound.volume = 0.6;
     chant.sound.play();
   } else {
     console.error(`could not find change chant with id: ${chantId}`);
@@ -157,6 +175,7 @@ function start(events) {
         break;
       case "decision":
         displayDecision(text, choices);
+        playGong();
         break;
       case "reset":
         displayReset(text);
@@ -204,3 +223,13 @@ function loadSoundFiles() {
   }));
   chants = [...newChants];
 }
+
+function lerp(value1, value2, amount) {
+  amount = amount < 0 ? 0 : amount;
+  amount = amount > 1 ? 1 : amount;
+  return value1 + (value2 - value1) * amount;
+}
+
+//  adjust the music volume
+const bgMusic = document.querySelector("#bgMusic");
+bgMusic.volume = 0.4;
