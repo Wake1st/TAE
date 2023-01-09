@@ -1,0 +1,59 @@
+body {
+  background-color: var(--bg-base-color);
+  color: var(--ft-strong-support-color);
+  font-family: jimNightshade;
+  letter-spacing: 0.1rem;
+  margin: 0;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 93vh;
+  overflow-x: clip;
+  margin-bottom: 4rem;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: celticGaramond2;
+  color: var(--ft-base-color);
+}
+
+h1 {
+  font-size: 4.2rem;
+  margin-block-start: 0.4em;
+  margin-block-end: 0.4em;
+  letter-spacing: 0.2rem;
+}
+
+h2 {
+  font-size: 2.6rem;
+  letter-spacing: 0.2rem;
+  margin-block-start: 0.4em;
+  margin-block-end: 0.4em;
+}
+
+h3 {
+  font-size: 1.4rem;
+  letter-spacing: 0.3rem;
+  margin-block-start: 0.8em;
+  margin-block-end: 0.8em;
+}
+
+h4 {
+  font-size: 1.1rem;
+  line-height: 1;
+  margin-block-start: 0.4em;
+  margin-block-end: 0.4em;
+}
+
+p {
+  font-size: 14px;
+  margin-block-start: 0.4em;
+  margin-block-end: 0.4em;
+}

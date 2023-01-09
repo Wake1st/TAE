@@ -1,0 +1,22 @@
+@font-face {
+  font-family: celticGaramond2;
+  src: url(/assets/celticGaramond2nd/CELTG___.TTF);
+}
+@font-face {
+  font-family: jimNightshade;
+  src: url(/assets/jimNightshade/JimNightshade-Regular.ttf);
+}
+
+:root {
+  --bg-base-color: #141c22;
+  --bg-strong-support-color: #465c6e40;
+  --bg-weak-support-color: #6e6e6e;
+  --bg-strong-challenger-color: #704c15;
+  --bg-weak-challenger-color: #33281790;
+
+  --ft-base-color: #479fba;
+  --ft-strong-support-color: #72dcfd;
+  --ft-weak-support-color: #6e6e6e;
+  --ft-strong-challenger-color: #6b3500;
+  --ft-weak-challenger-color: #bf772f;
+}

@@ -1,0 +1,97 @@
+#timeline {
+  display: flex;
+  flex-direction: column;
+  width: 42rem;
+}
+
+#timeline > h1,
+h2 {
+  text-align: center;
+}
+
+#timeline-items {
+  padding: 0 1rem 1rem;
+}
+
+.timelint-item {
+  padding: 0.5rem;
+  text-align: left;
+}
+
+#current-decision {
+  margin-top: 1rem;
+  width: 74rem;
+}
+
+#decision-title {
+  text-align: center;
+}
+
+#choices {
+  display: flex;
+  justify-content: center;
+  column-gap: 1rem;
+  padding: 0 1.4rem 1.4rem;
+}
+
+.choice-container {
+  font-family: celticGaramond2;
+  color: var(--ft-weak-challenger-color);
+  background-color: var(--bg-weak-challenger-color);
+  padding: 0.25rem;
+  padding-left: 1rem;
+}
+
+.choice-container:hover {
+  background-color: var(--ft-strong-challenger-color);
+}
+
+.choice-title {
+  color: var(--bg-strong-challenger-color);
+}
+
+.choice-summary {
+  padding: 0.5rem;
+  letter-spacing: 0.14rem;
+}
+
+.greater-border {
+  border-color: var(--ft-weak-challenger-color);
+  border-style: double;
+  border-width: 1rem;
+}
+
+.lesser-border {
+  border-color: var(--ft-weak-challenger-color);
+  border-style: double;
+  border-width: 0.5rem;
+}
+
+.chapter {
+  background-color: var(--bg-strong-support-color);
+  color: var(--ft-strong-support-color);
+  padding: 0.5rem;
+}
+
+.naration {
+  padding: 0.25rem;
+  letter-spacing: 0.06rem;
+  font-size: 24px;
+  line-height: 1.4;
+}
+
+.scripture {
+  font-family: celticGaramond2;
+  background-color: var(--bg-weak-challenger-color);
+  color: var(--ft-weak-challenger-color);
+  padding: 1rem;
+  font-size: 16px;
+  line-height: 1.4;
+  letter-spacing: 0.2rem;
+}
+
+.hidden {
+  overflow: hidden;
+  opacity: 0;
+  height: 0;
+}
