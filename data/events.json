@@ -25,6 +25,7 @@
   },
   {
     "id": 4,
+    "soundId": 0,
     "wait": 6,
     "type": "scripture",
     "text": "And so they sailed till they had met with the land again, far north of their home."
@@ -72,6 +73,7 @@
   },
   {
     "id": 100,
+    "soundId": 1,
     "wait": 4,
     "type": "scripture",
     "text": "Upon finding shore, they built a temple to worship the very sea which brought them to this promised land."
@@ -90,6 +92,7 @@
   },
   {
     "id": 103,
+    "soundId": 2,
     "wait": 4,
     "type": "scripture",
     "text": "Now there were those in the multitude who began to worry. 'How shall we eat', would say one. 'What shall we do when winter comes', would say another."
@@ -142,6 +145,7 @@
   },
   {
     "id": 200,
+    "soundId": 3,
     "wait": 4,
     "type": "scripture",
     "text": "And the Prophet commanded them, 'Are you so quick to forget the sea and it's blessings? Surely there is one among you who can fish.'"
@@ -160,6 +164,7 @@
   },
   {
     "id": 203,
+    "soundId": 4,
     "wait": 4,
     "type": "scripture",
     "text": "Now there were those who sought to eat the things which crawled upon the sea floor, for they had difficulty catching fish. But to many, these creatures were unpure, and to eat them would be to blaspheme their gods."
@@ -212,6 +217,7 @@
   },
   {
     "id": 210,
+    "soundId": 5,
     "wait": 4,
     "type": "scripture",
     "text": "And the Prophet spoke, 'Have you become so self-righteous that you reject the blessing that the sea has given? Let any who seeks starvation find humility instead, but those who are thankful shall be filled in their stomachs and their souls."
@@ -231,9 +237,10 @@
   },
   {
     "id": 260,
+    "soundId": 6,
     "wait": 4,
     "type": "scripture",
-    "text": "The Prophet warned them of their greed: 'Do you wish to craw upon your bellies like currsed things? Crawl! Those who eat of unclean things shall be themselves unclean."
+    "text": "The Prophet warned them of their greed: 'Do you wish to craw upon your bellies like those accursed things? Crawl! Those who eat of unclean things shall be themselves unclean."
   },
   {
     "id": 261,
@@ -250,6 +257,7 @@
   },
   {
     "id": 300,
+    "soundId": 7,
     "wait": 4,
     "type": "scripture",
     "text": "And the Prophet corrected them, 'You are like children - wining with an open mouth; close thy mouth and open thy mind to the will of heaven. You shall feast on holy thoughts. You shall fill your spirit, which is eternal, not your stomach, which will rot like the food you long for.'"
@@ -274,6 +282,7 @@
   },
   {
     "id": 304,
+    "soundId": 8,
     "wait": 4,
     "type": "scripture",
     "text": "Now the days were growing short, and they new that winter was drawing near. And they were each of them concerned with how they would eat during that time when food is scarce."
@@ -328,6 +337,7 @@
   },
   {
     "id": 310,
+    "soundId": 9,
     "wait": 4,
     "type": "scripture",
     "text": "So the Prophet instructed them to begin storing up what foods they could, so that they would not grow hungry in those times when food is scarce."
@@ -341,6 +351,7 @@
   },
   {
     "id": 360,
+    "soundId": 10,
     "wait": 4,
     "type": "scripture",
     "text": "But the Prophet corrected them: 'You foolish children - do you think the sea is afraid of the cold? Is it not still there when spring comes and the waters thaw. Why then do you doubt the sea will still care for you?"
@@ -360,6 +371,7 @@
   },
   {
     "id": 400,
+    "soundId": 11,
     "wait": 4,
     "type": "scripture",
     "text": "They traveled until they reached a forest; there they build a place of worship; 'Come, let us be still like the trees', they said to one another."
@@ -378,6 +390,7 @@
   },
   {
     "id": 403,
+    "soundId": 12,
     "wait": 4,
     "type": "scripture",
     "text": "Now the place where they settled was abundant in resources, and their needs were met; yet there were those who sought to eat the meat of animals, and others who did argue that this was an act of sacrilege."
@@ -426,6 +439,7 @@
   },
   {
     "id": 500,
+    "soundId": 13,
     "wait": 4,
     "type": "scripture",
     "text": "But the Prophet chided them; 'Are these creatures not guests here as we are? Curse any whom eats of an animal - they are eating their own kin."
@@ -450,6 +464,7 @@
   },
   {
     "id": 504,
+    "soundId": 14,
     "wait": 4,
     "type": "scripture",
     "text": "Now after this time there came traders who had much to offer. They brought with them food which came from animals, and the skins of wild game."
@@ -508,9 +523,10 @@
   },
   {
     "id": 510,
+    "soundId": 15,
     "wait": 4,
     "type": "scripture",
-    "text": "And again the Prophet chastized them; 'You would not steal a mothers milk from a child? Why then would you do the same to our animal kin? Does not the forest provide for their needs - and this being done without anything taken from us? Have faith, then, that it shall the same for us, but if we forsake it's blessings, may we be stripped bare of our abundance and cover ourselves in piety instead.'"
+    "text": "And again the Prophet chastised them; 'You would not steal a mothers milk from a child? Why then would you do the same to our animal kin? Does not the forest provide for their needs - and this being done without anything taken from us? Have faith, then, that it shall the same for us, but if we forsake it's blessings, may we be stripped bare of our abundance and cover ourselves in piety instead.'"
   },
   {
     "id": 511,
@@ -527,6 +543,7 @@
   },
   {
     "id": 550,
+    "soundId": 16,
     "wait": 4,
     "type": "scripture",
     "text": "And the Prophet, upon hearing this, stepped in to instruct them; 'Do we not gather berries and roots, and the seeds of trees and mushrooms found upon the ground? And is this not taking from those living things? But the forest knows our needs and so shares its bounty with us, that we may be blessed and worship in all that we are given.'"
@@ -546,6 +563,7 @@
   },
   {
     "id": 600,
+    "soundId": 17,
     "wait": 4,
     "type": "scripture",
     "text": "And the Prophet spoke thus, 'Do not the foxes and birds of prey hunt other creatures? Let each be thankful with what the forest provides, and be not self righteous, but thankful, that the forest should provide to each according to his needs."
@@ -570,9 +588,10 @@
   },
   {
     "id": 604,
+    "soundId": 18,
     "wait": 4,
     "type": "scripture",
-    "text": "But the people began to argue and shot with each other. Hatred stired within them and they were each becoming like strangers to each other, and there was great mistrust amongst them."
+    "text": "But the people began to argue and shout with each other. Hatred stirred within them and they were each becoming like strangers to each other, and there was great mistrust amongst them."
   },
   {
     "id": 605,
@@ -622,9 +641,10 @@
   },
   {
     "id": 610,
+    "soundId": 19,
     "wait": 4,
     "type": "scripture",
-    "text": "Yet Prophet forgave them of their sins, and encouraged each to do the same unto those they had wronged. And they prepared a feast together, and played music and danced with each other."
+    "text": "Yet the Prophet forgave them of their sins, and encouraged each to do the same unto those they had wronged. And they prepared a feast together, and played music and danced with each other."
   },
   {
     "id": 611,
@@ -641,9 +661,10 @@
   },
   {
     "id": 650,
+    "soundId": 20,
     "wait": 4,
     "type": "scripture",
-    "text": "Upon hearing of this, the Prophet torn their garments and covered themselves in ash, crying aloud, 'How spoiled we have become, that we should fight over our abundance.'"
+    "text": "Upon hearing this, the Prophet torn their garments and covered themselves in ash, crying aloud, 'How spoiled we have become, that we should fight over our abundance.'"
   },
   {
     "id": 651,
@@ -660,9 +681,10 @@
   },
   {
     "id": 700,
+    "soundId": 21,
     "wait": 4,
     "type": "scripture",
-    "text": "They marched upon hills, and saw that there were great riches burried underneath them."
+    "text": "They marched upon hills, and saw that there were great riches buried underneath them."
   },
   {
     "id": 701,
@@ -684,9 +706,10 @@
   },
   {
     "id": 704,
+    "soundId": 22,
     "wait": 4,
     "type": "scripture",
-    "text": "Now as they began working, they were going without food and rest, and their homes were becomming unclean."
+    "text": "Now as they began working, they were going without food and rest, and their homes were becoming unclean."
   },
   {
     "id": 705,
@@ -742,6 +765,7 @@
   },
   {
     "id": 800,
+    "soundId": 23,
     "wait": 4,
     "type": "scripture",
     "text": "And so the Prophet divided them male from female, and spoke unto them, 'Do not the women bear children, and are not those children in need of their mother long after their births? Let us then divide ourselves, and let the men and women serve as they are best suited for.'"
@@ -760,9 +784,10 @@
   },
   {
     "id": 803,
+    "soundId": 24,
     "wait": 4,
     "type": "scripture",
-    "text": "When the men had found many great treasures, they gathered together and compared their riches; and one would say to another, 'Is not my lot more valuable than yours? Why then should we recieve the same portion of food and drink?'"
+    "text": "When the men had found many great treasures, they gathered together and compared their riches; and one would say to another, 'Is not my lot more valuable than yours? Why then should we receive the same portion of food and drink?'"
   },
   {
     "id": 804,
@@ -837,6 +862,7 @@
   },
   {
     "id": 810,
+    "soundId": 25,
     "wait": 4,
     "type": "scripture",
     "text": "'You who follow me do so out of faith,' the Prophet reminded them, 'So then have faith in me, and I shall decide the worth of each stone and morsel, in turn."
@@ -856,9 +882,10 @@
   },
   {
     "id": 840,
+    "soundId": 26,
     "wait": 4,
     "type": "scripture",
-    "text": "But the Prophet scolded them, 'Are you children who cannot discuss without tantrums? Are you animals who cannot reason with each other? Begone then, and behave in a manner which is honerable to the earth."
+    "text": "But the Prophet scolded them, 'Are you children who cannot discuss without tantrums? Are you animals who cannot reason with each other? Begone then, and behave in a manner which is honorable to the earth."
   },
   {
     "id": 841,
@@ -869,6 +896,7 @@
   },
   {
     "id": 870,
+    "soundId": 27,
     "wait": 4,
     "type": "scripture",
     "text": "And so the Prophet chided the men, 'Is it not enough you must argue with your wives about what your work is worth, but now must argue amongst yourselves? Give your treasures then to the women, and let them decide the worth of your households."
@@ -882,9 +910,10 @@
   },
   {
     "id": 900,
+    "soundId": 28,
     "wait": 4,
     "type": "scripture",
-    "text": "But the Prophet went before them, with a gem in our hand and a mushroom in another, saying thus: 'Does not the earth provide for our needs, and bless us with such riches? And are the women not able to strike the earth for its blessings? And do the men wish to eat only stones and dirt? We each disire these gifts, but we cannot go without food or rest. Let us then each perform each task in some portion, that we may serve and be served by one another.'"
+    "text": "But the Prophet went before them, with a gem in one hand and a mushroom in the other, saying thus: 'Does not the earth provide for our needs, and bless us with such riches? And are the women not able to strike the earth for its blessings? And do the men wish to eat only stones and dirt? We each desire these gifts, but we cannot go without food or rest. Let us then each perform each task in some portion, that we may serve and be served by one another.'"
   },
   {
     "id": 901,
@@ -906,6 +935,7 @@
   },
   {
     "id": 904,
+    "soundId": 29,
     "wait": 4,
     "type": "scripture",
     "text": "Now there were those who refused to do any work, other than digging in the earth, and the others among them sought judgement to be brought down upon them for their laziness."
@@ -954,9 +984,10 @@
   },
   {
     "id": 910,
+    "soundId": 30,
     "wait": 4,
     "type": "scripture",
-    "text": "And so the Prophet cast out the lazy and the selfish, repremanding them; 'You greedy fools! If treasure is all you seek, then let your bellies be full of stone, and you hearts heavy with shame.'"
+    "text": "And so the Prophet cast out the lazy and the selfish, reprimanding them; 'You greedy fools! If treasure is all you seek, then let your bellies be full of stone, and you hearts heavy with shame.'"
   },
   {
     "id": 911,
@@ -967,9 +998,10 @@
   },
   {
     "id": 950,
+    "soundId": 31,
     "wait": 4,
     "type": "scripture",
-    "text": "So the Prophet commanded them to be bond in chains, and they were forced to work without rest and without food or water. They could not keep what they found, but instead had nothing. And so they had nothing to barter with when they were in need."
+    "text": "So the Prophet commanded them to be bound in chains, and they were forced to work without rest and without food or water. They could not keep what they found, but instead had nothing. And so they had nothing to barter with when they were in need."
   },
   {
     "id": 951,
