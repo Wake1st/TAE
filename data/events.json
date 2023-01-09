@@ -380,7 +380,7 @@
     "id": 403,
     "wait": 4,
     "type": "scripture",
-    "text": "The place where they settled was abundant in resources, and their needs were met; yet there were those who sought to eat of living flesh, and others who did argue that this was an act of sacrilege."
+    "text": "Now the place where they settled was abundant in resources, and their needs were met; yet there were those who sought to eat the meat of animals, and others who did argue that this was an act of sacrilege."
   },
   {
     "id": 404,
@@ -446,13 +446,13 @@
     "id": 503,
     "wait": 4,
     "type": "naration",
-    "text": "Some time after, a trade caravan arrived, bringing with them animal goods such as milk and eggs, and pelts and meats of wild game."
+    "text": "Some time after, a trade caravan arrives, bringing with them animal goods such as milk and eggs, and animal pelts."
   },
   {
     "id": 504,
     "wait": 4,
     "type": "scripture",
-    "text": "Now after this time there came traders who had much to offer. They brought with them food which came from animals, and pelts of wild game."
+    "text": "Now after this time there came traders who had much to offer. They brought with them food which came from animals, and the skins of wild game."
   },
   {
     "id": 505,
