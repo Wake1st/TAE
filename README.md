@@ -3,6 +3,8 @@ A text adventure game made for [Ludum Dare 52](https://ldjam.com/events/ludum-da
 
 There's a better version hosted on [itch.io](https://wake1st.itch.io/sacred-harvest).
 
+I also have a [Typescript version](https://github.com/Wake1st/SacredHarvestTs).
+
 ## Resources
 
 ### Color
