@@ -1,5 +1,7 @@
 # Sacred Harvest
-A text adventure game made for [Ludum Dare 52](https://ldjam.com/events/ludum-dare/52/sacred-harvest): "Your flock looks up to you, Prophet; do you have the strength to lead them?". There's a better version hosted on [itch.io](https://wake1st.itch.io/sacred-harvest).
+A text adventure game made for [Ludum Dare 52](https://ldjam.com/events/ludum-dare/52/sacred-harvest): "Your flock looks up to you, Prophet; do you have the strength to lead them?". 
+
+There's a better version hosted on [itch.io](https://wake1st.itch.io/sacred-harvest).
 
 ## Resources
 
