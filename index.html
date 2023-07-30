@@ -1,67 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <meta name="author" content="Joel Wakefield" />
-    <meta
-      name="description"
-      content="A game about growing a flock of disciples, and reaping the harvest."
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="icon" type="image/x-icon" href="/assets/occult.png" />
-    <link rel="stylesheet" href="styles/variables.css" />
-    <link rel="stylesheet" href="styles/base.css" />
-    <link rel="stylesheet" href="styles/custom.css" />
-    <link rel="stylesheet" href="styles/animations.css" />
+  <meta name="author" content="Joel Wakefield" />
+  <meta name="description" content="A game about growing a flock of disciples, and reaping the harvest." />
 
-    <title>Sacred Harvest</title>
-  </head>
-  <body>
-    <main>
-      <div id="timeline" class="greater-border">
-        <h1>Sacred Harvest</h1>
-        <div id="timeline-items"></div>
-      </div>
+  <link rel="icon" type="image/x-icon" href="/assets/images/occult.png" />
+  <link rel="stylesheet" href="styles/variables.css" />
+  <link rel="stylesheet" href="styles/base.css" />
+  <link rel="stylesheet" href="styles/custom.css" />
+  <link rel="stylesheet" href="styles/animations.css" />
 
-      <div id="current-decision" class="lesser-border hidden">
-        <h2 id="decision-title"></h2>
-        <div id="choices"></div>
-      </div>
-    </main>
+  <script src="state/eventIndex.js" type="module"></script>
+  <script src="state/flock.js" type="module"></script>
 
-    <footer>
-      <div id="credits">
-        <h5>Credits:</h5>
-        <p>Written/Programmed/Sound Design - Joel Wakefield</p>
-        <p>
-          Fav Icon -
-          <a
-            href="https://www.flaticon.com/free-icon/occult_5264469?term=occult&page=1&position=12&origin=search&related_id=5264469"
-          >
-            Freepik
-          </a>
-        </p>
-        <p>
-          Celtic Font -
-          <a
-            href="https://www.dafont.com/font-comment.php?file=celtic_garamond_2nd"
-          >
-            No Images Fonts
-          </a>
-        </p>
-        <p>
-          <a href="https://github.com/Wake1st/SacredHarvest"> Source Code </a>
-        </p>
-      </div>
-    </footer>
+  <script src="modules/math.js" type="module"></script>
+  <script src="modules/audio.js" type="module"></script>
+  <script src="modules/display.js" type="module"></script>
+  <script src="modules/event.js" type="module"></script>
+  <script src="modules/engine.js" type="module"></script>
 
-    <audio id="bgMusic" autoplay loop>
-      <source src="assets/audio/ForbiddenNorth.mp3" type="audio/mp3" />
-    </audio>
+  <title>Sacred Harvest</title>
+</head>
 
-    <script src="game.js" type="module"></script>
-  </body>
+<body>
+  <main>
+    <div id="timeline" class="greater-border">
+      <h1>Sacred Harvest</h1>
+      <div id="timeline-items"></div>
+    </div>
+
+    <div id="current-decision" class="lesser-border hidden">
+      <h2 id="decision-title"></h2>
+      <div id="choices"></div>
+    </div>
+  </main>
+
+  <footer>
+    <div id="credits">
+      <h5>Credits:</h5>
+      <p>Written/Programmed/Sound Design - Joel Wakefield</p>
+      <p>
+        Fav Icon -
+        <a
+          href="https://www.flaticon.com/free-icon/occult_5264469?term=occult&page=1&position=12&origin=search&related_id=5264469">
+          Freepik
+        </a>
+      </p>
+      <p>
+        Celtic Font -
+        <a href="https://www.dafont.com/font-comment.php?file=celtic_garamond_2nd">
+          No Images Fonts
+        </a>
+      </p>
+      <p>
+        <a href="https://github.com/Wake1st/SacredHarvest"> Source Code </a>
+      </p>
+    </div>
+  </footer>
+
+  <audio id="bgMusic" autoplay loop>
+    <source src="assets/audio/ForbiddenNorth.mp3" type="audio/mp3" />
+  </audio>
+
+
+  <script src="main.js" type="module"></script>
+</body>
+
 </html>
