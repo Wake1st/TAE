@@ -14,12 +14,12 @@ let ring = new Audio("../assets/audio/Ring.wav");
 let chants;
 
 
-function loadChants(chants) {
-  const newChants = chants.map((chant) => ({
+function loadChants(chantData) {
+  const audioChants = chantData.map((chant) => ({
     ...chant,
     sound: new Audio(`./assets/audio/chants/${chant.file}`),
   }));
-  chants = [...newChants];
+  chants = [...audioChants];
 }
 
 function playChanting(chantId) {

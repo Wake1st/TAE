@@ -13,13 +13,13 @@ function start(events) {
       timelineItems.innerHTML = null;
       choicesContainer.innerHTML = null;
     }
-
+    
     let event = events.find(({ id }) => id === eventIndex);
-
+    
     if (!event) {
       event = events.find(({ id }) => id === -1);
     }
-
+    
     const { nextId, type } = event;
     
     const process = processes[type];

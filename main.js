@@ -13,7 +13,7 @@ let chants = await readJson("./data/chants.json");
 
 //  setup audio
 loadChants(chants);
-bgMusic.volume = 0.4;
+bgMusic.volume = 0.0;
 
 //  start the game loop
 start(events);
