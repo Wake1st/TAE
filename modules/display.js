@@ -1,8 +1,3 @@
-import {
-  playRing,
-} from './audio.js';
-
-import { flock, setFlock } from '../state/flock.js';
 import { setEventIndex } from '../state/eventIndex.js';
 
 
@@ -35,9 +30,6 @@ function createChoiceContainer({ nextId, name, summary, consequences }) {
 
     //  wipe internals
     choicesContainer.innerHTML = null;
-
-    //  make some noise
-    playRing();
   });
 
   const titleEl = document.createElement("h4");
@@ -56,7 +48,7 @@ function createChoiceContainer({ nextId, name, summary, consequences }) {
   return choiceContainer;
 }
 
-function displayDecision(text, choices) {
+function displayDecisions(text, choices) {
   //  show decision box
   currentDecision.classList.remove("hidden");
   currentDecision.classList.remove("fade-out-down");
@@ -84,12 +76,12 @@ function displayReset(text) {
   const choices = [
     {
       nextId: 0,
-      name: "Serve Again...",
-      summary: "and let the harvest be plentiful.",
+      name: "Game Over",
+      summary: "Restart",
     },
   ];
 
-  displayDecision(text, choices);
+  displayDecisions(text, choices);
 }
 
 export {
@@ -98,7 +90,7 @@ export {
   decisionTitle,
   choicesContainer,
   bgMusic,
-  displayDecision,
+  displayDecisions,
   displayTimelineItem,
   displayReset,
 };

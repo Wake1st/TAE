@@ -1,37 +1,25 @@
 import {
   displayTimelineItem,
-  displayDecision,
+  displayDecisions,
   displayReset,
 } from './display.js';
-import {
-  playBoom,
-  playWispers,
-  playChanting,
-  playGong,
-} from './audio.js';
+import { playAudio } from './audio.js';
 
 import { eventIndex, setEventIndex } from '../state/eventIndex.js';
 
 
 const processes = {
-  "chapter": ({ text }) => {
-    displayTimelineItem(text, "h3", ["chapter", "fade-in-left"]);
-    playBoom();
-    setEventIndex(eventIndex + 1);
-  },
-  "naration": ({ text }) => {
+  "naration": ({ text, id }) => {
     displayTimelineItem(text, "p", ["naration", "fade-in-down"]);
-    playWispers();
-    setEventIndex(eventIndex + 1);
-  },
-  "scripture": ({ text, soundId }) => {
-    displayTimelineItem(text, "p", ["scripture", "fade-in"]);
-    playChanting(soundId);
+    playAudio(id);
     setEventIndex(eventIndex + 1);
   },
   "decision": ({ text, choices }) => {
-    displayDecision(text, choices);
-    playGong();
+    displayDecisions(text, choices);
+  },
+  "selection": ({ text }) => {
+    displayTimelineItem(text, "h3", ["selection", "fade-in-left"]);
+    setEventIndex(eventIndex + 1);
   },
   "reset": ({ text }) => {
     displayReset(text);
