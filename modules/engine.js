@@ -1,33 +1,54 @@
-import processes from './event.js';
 import { 
   timelineItems,
   choicesContainer,
+  displayElement,
+  displayDecisions,
 } from './display.js';
 
 import { eventIndex, setEventIndex } from '../state/eventIndex.js';
 
+let eventKeys;
 
 function start(events) {
+  eventKeys = events.keys();
+
   function loop() {
     if (eventIndex === 0) {
       timelineItems.innerHTML = null;
       choicesContainer.innerHTML = null;
     }
     
-    let event = events.find(({ id }) => id === eventIndex);
-    
-    if (!event) {
-      event = events.find(({ id }) => id === -1);
+    //  get the event
+    let key = eventKeys.find(({ id }) => id === eventIndex);
+    if (!key) {
+      console.error(
+        `invalid data: cannot find key {${eventIndex}}`
+      );
     }
+
+    let { text, next, choices } = events[key]
     
-    const { nextId, type } = event;
-    
-    const process = processes[type];
-    process(event);
-    
-    //  sometimes we skip to another section
-    if (nextId) {
-      setEventIndex(nextId);
+    //  always text to display and audio to play
+    playAudio(key)
+    displayElement(text, 'p', [
+      "timeline-item",
+      "naration", 
+      "fade-in-down"
+    ]);
+  
+    //  redirect if faulty
+    if (!next && !choices ) {
+      choices = [{
+        text: "Game Over",
+        next: "intro",
+      }];
+    }
+
+    //  display possible choices
+    if (choices) {
+      displayDecisions(choices)
+    } else {
+      setEventIndex(next);
     }
 
     //  auto-scroll

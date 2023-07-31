@@ -1,4 +1,4 @@
-let eventIndex = 0;
+let eventIndex = "intro";
 const setEventIndex = (i) => eventIndex = i;
 
 export {

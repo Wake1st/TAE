@@ -1,19 +1,21 @@
+import path from 'path';
 import start from './modules/engine.js';
-import { bgMusic } from './modules/display.js';
-import { loadChants } from './modules/audio.js';
+import { bgMusic, loadAudio } from './modules/audio.js';
 
-
-async function readJson(path) {
-  return fetch(path).then((response) => response.json());
+async function loadFile(file) {
+  return fetch(path
+    .join(__dirname, 'data', file)
+    .then((response) => response.json())
+  );
 }
 
 //  load data
-const events = await readJson("./data/events.json");
-let chants = await readJson("./data/chants.json");
+const events = await loadFile("events.json");
+let audio = await loadFile("audio.json");
 
 //  setup audio
-loadChants(chants);
-bgMusic.volume = 0.0;
+loadAudio(audio);
+bgMusic.volume = 0.4;
 
 //  start the game loop
 start(events);

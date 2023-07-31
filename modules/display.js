@@ -3,26 +3,30 @@ import { setEventIndex } from '../state/eventIndex.js';
 
 const timelineItems = document.querySelector("#timeline-items");
 const currentDecision = document.querySelector("#current-decision");
-const decisionTitle = document.querySelector("#decision-title");
 const choicesContainer = document.querySelector("#choices");
-const bgMusic = document.querySelector("#bgMusic");
 
 
-function createChoiceContainer({ nextId, name, summary, consequences }) {
+function createChoiceContainer({ text, next }) {
   const choiceContainer = document.createElement("div");
   choiceContainer.classList.add("choice-container");
 
-  choiceContainer.addEventListener("click", () => {
-    setEventIndex(nextId);
+  //  TODO: check if text is array or string
+  if (typeof text === 'string') {
+    const summaryEl = document.createElement("p");
+    summaryEl.classList.add("choice-summary");
+    summaryEl.innerHTML = text;
+    choiceContainer.appendChild(summaryEl);
+  } else {
+    text.map((t) => {
+      const summaryEl = document.createElement("p");
+      summaryEl.classList.add("choice-summary");
+      summaryEl.innerHTML = t;
+      choiceContainer.appendChild(summaryEl);
+    })
+  }
 
-    //  some decisions just reset the story
-    if (consequences) {
-      const newFlock = { ...flock };
-      consequences.forEach(({ key, value }) => {
-        newFlock[key] += value;
-      });
-      setFlock(newFlock)
-    }
+  choiceContainer.addEventListener("click", () => {
+    setEventIndex(next);
 
     //  hide decision box
     currentDecision.classList.remove("fade-in-up");
@@ -30,32 +34,16 @@ function createChoiceContainer({ nextId, name, summary, consequences }) {
 
     //  wipe internals
     choicesContainer.innerHTML = null;
-  });
-
-  const titleEl = document.createElement("h4");
-  titleEl.classList.add("choice-title");
-  titleEl.innerHTML = name;
-  choiceContainer.appendChild(titleEl);
-
-  //  not everything needs to be summed up
-  if (summary) {
-    const summaryEl = document.createElement("p");
-    summaryEl.classList.add("choice-summary");
-    summaryEl.innerHTML = summary;
-    choiceContainer.appendChild(summaryEl);
-  }
+  });  
 
   return choiceContainer;
 }
 
-function displayDecisions(text, choices) {
+function displayDecisions(choices) {
   //  show decision box
   currentDecision.classList.remove("hidden");
   currentDecision.classList.remove("fade-out-down");
   currentDecision.classList.add("fade-in-up");
-
-  //  insert decision
-  decisionTitle.innerHTML = text;
 
   //  insert choices
   choicesContainer.innerHTML = null;
@@ -65,32 +53,28 @@ function displayDecisions(text, choices) {
   });
 }
 
-function displayTimelineItem(text, element, classes) {
+function displayElement(text, element, classes) {
   const el = document.createElement(element);
   el.innerHTML = text;
-  el.classList.add("timeline-item", ...classes);
+  el.classList.add(...classes);
   timelineItems.appendChild(el);
 }
 
-function displayReset(text) {
+function displayReset() {
   const choices = [
     {
-      nextId: 0,
-      name: "Game Over",
-      summary: "Restart",
+      text: "Game Over",
+      next: "intro",
     },
   ];
 
-  displayDecisions(text, choices);
+  displayDecisions(choices);
 }
 
 export {
   timelineItems,
-  currentDecision,
-  decisionTitle,
   choicesContainer,
   bgMusic,
   displayDecisions,
-  displayTimelineItem,
-  displayReset,
+  displayElement,
 };
