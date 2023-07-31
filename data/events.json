@@ -1,0 +1,164 @@
+{
+  "intro": {
+    "text": "What is a game?",
+    "choices": {
+      "art": "A work of art.",
+      "interaction": "An interactive experiance.",
+      "problems": "The source of all of society's problems."
+    }
+  },
+  "art": {
+    "text": [
+      "I thought so too, but the more I think about it, the more I realize that this simple definition couldn't possibly emcompass the entire sphere of gaming, just as shaddows on the wall in Plato's cave are but a mere facade.",
+      "Perhaps, just as we cannot truely know if the shaddows are reality, so too we may never be able to grasp gaming...",
+      "But, sitting here, in a small cafe, off the beaten path in Lisbon, I've concluded that, since games are in fact made, we can essetially unmake them, and that's what I've done.",
+      "But lets get back to my point - what is art?"
+    ],
+    "choices": {
+      "purpose": "Anything without purpose other than itself.",
+      "subjective": "It's subjective, so who could really say?"
+    }
+  },
+  "purpose": {
+    "text": [
+      "Sure...",
+      "But that's too simple; after all, games are created by people, and if people have no inate purpose, how can anything we, as purposeless beings, produce have purpose?",
+      "If a parent dies with nothing, how can the children of said parent have any inheritance?"
+    ],
+    "choices": {
+      "noninherited": "Purpose doesn't require inheritance; our creations exist because we often have some task to accomplish, or void to fill - a bridge connects two sides, that's a simple purpose created by us 'purposeless beings'.",
+      "selfpurpose": "Who's to say we have no purpose? Purpose isn't something inate - it's just meaning, and we can ascribe meaning to our our meaningless existance, if we so choose.",
+      "seethrough": "I said 'without purpose', so who cares about purpose? Also, why must we define art to discus what games are? I think you're derailing the conversation into uncomprehensable nonsense, and will then try to claim you've 'won' or that you're 'too smart' to even debate against."
+    }
+  },
+  "noninherited": {
+    "text": "Well- I...",
+    "next": "toosmart"
+  },
+  "selfpurpose": {
+    "text": "...yeah, but...",
+    "next": "toosmart"
+  },
+  "seethrough": {
+    "text": "That's aburd, and anyway, you're getting off topic.",
+    "next": "conclusion"
+  },
+  "subjective": {
+    "text": "It seems that way, but have you ever really asked what subjectivism means?",
+    "choices": {
+      "noncooperative": "Fuck off.",
+      "toosmart": "This bit is getting old.",
+      "opinion": "It's just one's opinion."
+    }
+  },
+  "opinion": {
+    "text": [
+      "Exactly, which is why gaming could never actually be subjective - games are played by multiple people, and if different people, each with their own viewpoint, play the same game, if those people, each with a unique perspective, experience the same game, how could that game be subjective?",
+      "I think games, like art, are experienced by us, humans, who share the same basic anatomy, and thus are limited to what possibilites we can experience, to the point that every game, like art, is limited to a predictable set of values.",
+      "These values can thus be tweaked, hence, the experience as a whole can be tweaked, but if the whole game can be tweaked, how can a game really exist at all?",
+      "If you look at a mirror, you see some image reflected in it; change you perspective, and the reflected image, likewise, changes. The mirror itself does not actually exist - how can it?",
+      "It keeps changing, just like games."
+    ],
+    "next": "conclusion"
+  },
+  "interaction": {
+    "text": [
+      "Yes, there are strategy games, role playing games, and of course, shooting 'games', the all consuming, high-fructose corn syrup of the gaming world.",
+      "But what is interaction?"
+    ],
+    "choices": {
+      "acting": "Acting upon some system/mechanism/object.",
+      "attention": "Paying attention.",
+      "noncooperative": "The fuck you mean, what is interaction?!"
+    }
+  },
+  "acting": {
+    "text": [
+      "Yes...",
+      "But acting in what way? How do we define acting? What actions qualify, and do different actions result in different experiences?"
+    ],
+    "choices": {
+      "whatacting": [
+        "Yes.",
+        "No."
+      ],
+      "noncooperative": "I think you're being retorical because you have no where to go with _this_ 'game'."
+    }
+  },
+  "whatacting": {
+    "text": "It really doesn't matter.",
+    "next": "conclusion"
+  },
+  "attention": {
+    "text": "Sure, you can 'pay' attention, and by paying, you offer something more precious than money, or even time, you offer your mind - the awakened self, self saturated in sublte and not-so-subtle inquiries that do nothing but arouse some blissful state of being - the colloquially termed 'immersion', or 'flow'; these states of being connect the 'player' in a way most 'conventional' games could never 'understand', because they 'connect' with the 'soul' - they 'reach' the 'heart' of the 'player'.",
+    "next": "conclusion"
+  },
+  "problems": {
+    "text": "This may seem somewhat suburban - 'the games are rotting kids brains' you might hear on the news, blaring from the other room, where your parents argue over who loves you more, where 'love' is code for sacrifice, aka: 'I'm a better parent because I hate my life more than you'.",
+    "choices": {
+      "toosmart": "I think you trailed off a bit.",
+      "noncooperative": "What does this have to do with games?",
+      "parents": "... ok."
+    }
+  },
+  "parents": {
+    "text": [
+      "Parents 'love' their children in the same way gamers 'love' their games. We argue incessantly and ceaselessly to no end about who's game is better, but we're really just venting about how much of our life we've wasted 'playing' someone else's game.",
+      "Game developers are infamous for never actually playing the games they make, too busy trying to sacrifice their own life, for the life of their 'child'- the game.",
+      "We play with their 'child' and- wait, that came out wrong.",
+      "What I mean to say is that we hate 'our' children- I mean we hate ourselves..."
+    ],
+    "choices": {
+      "ontopic": "You were saying, 'Games are a problem'.",
+      "toosmart": "I think you're getting off topic.",
+      "noncooperative": "Oooookay, I'm gonna go."
+    }
+  },
+  "ontopic": {
+    "text": [
+      "Right! As our society grows more advanced, so too must our discussion of games; what makes games a problem? How can two people play the same game, and one person have fun while the other is too busy complaining about character butts.",
+      "After all, butts are beautiful - why should we be ashamed of that? Why do great butts always stir such anger in the public?"
+    ],
+    "choices": {
+      "butts": "..."
+    }
+  },
+  "butts": {
+    "text": [
+      "For as long as anyone can remember, games and butts have been intertwined.",
+      "Pacman, who has no butt, must avoid the ghosts of his shamefull drug addiction, but when he eats something healthy, a fruit, he is able to eat their butts, and thus, eat his own shame.",
+      "Gamers playing online often end their game with the classic, 'GG': great gams, an acknowledgement of each player's skillful juggling of their own rotund rum-dumpers.",
+      "Every time a player buys 'NieR: Automata', 'Together BnB', '69 Summon Succubus', 'HoneySelect2Libido DX', 'Furry Cyberfucker: 2', 'NejicomiSimulator Vol.5 - Big-boob Goat-chan is hung and fucked while her boobs are bouncing around!! - (Gapping, hard sex)', or 'Spore', they are not just gaming, they are connoisseurs of that bone crushing, spine tingling, humpty-dump-truck, earthquakin', money-makin', Keeper of the Beaper: The Booty(TM)."
+    ],
+    "choices": {
+      "thepoint": [
+        "...",
+        "...",
+        "...um"
+      ]
+    }
+  },
+  "thepoint": {
+    "text": "This all leads me back to my original point!",
+    "next": "conclusion"
+  },
+  "noncooperative": {
+    "text": "If you can't properly engage in civilized dialogue, then perhaps you should just listen.",
+    "next": "donations"
+  },
+  "toosmart": {
+    "text": "Maybe this trail of discussion is too difficult for you to travel down; I guess there's no point to me talking to you about this any further.",
+    "next": "donations"
+  },
+  "conclusion": {
+    "text": [
+      "What is gaming? Simply put, games are fun; when a game is no longer fun, we loose interest and stop playing. This connection between fun and playing is, of course, burried deep within our genetic core - animals will play games, and do so only to have fun.",
+      "So too, we as animals, only play games when they are fun."
+    ],
+    "next": "donations"
+  },
+  "donations": {
+    "text": "I spent a lot of time making this game, so please head over to my patreon and give as much money as you can. Every worthwhile donation enables me to tell you more about the world around us and, ultimately, how to live a more fullfilling life, like I've lived."
+  },
+  "clarity": {}
+}
