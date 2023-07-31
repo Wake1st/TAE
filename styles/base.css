@@ -1,7 +1,7 @@
 body {
-  background-color: var(--bg-base-color);
-  color: var(--ft-strong-support-color);
-  font-family: jimNightshade;
+  background-color: var(--bg-primary-color);
+  color: var(--ft-primary-color);
+  font-family: 'Nunito Sans', sans-serif;
   letter-spacing: 0.1rem;
   margin: 0;
 }
@@ -26,8 +26,8 @@ h2,
 h3,
 h4,
 h5 {
-  font-family: celticGaramond2;
-  color: var(--ft-base-color);
+  font-family: 'Mulish', sans-serif;
+  color: var(--ft-header-color);
 }
 
 h1 {

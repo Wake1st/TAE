@@ -1,28 +1,31 @@
 import { 
   timelineItems,
   choicesContainer,
-  displayElement,
+  displayNaration,
   displayDecisions,
 } from './display.js';
+import {
+  playAudio
+} from './audio.js';
 
 import { eventIndex, setEventIndex } from '../state/eventIndex.js';
 
 let eventKeys;
 
 function start(events) {
-  eventKeys = events.keys();
+  eventKeys = Object.keys(events);
 
   function loop() {
-    if (eventIndex === 0) {
+    if (eventIndex === "intro") {
       timelineItems.innerHTML = null;
       choicesContainer.innerHTML = null;
     }
     
     //  get the event
-    let key = eventKeys.find(({ id }) => id === eventIndex);
+    let key = eventKeys.find((id) => id === eventIndex);
     if (!key) {
       console.error(
-        `invalid data: cannot find key {${eventIndex}}`
+        `Invalid Data: cannot find key {${eventIndex}}`
       );
     }
 
@@ -30,18 +33,17 @@ function start(events) {
     
     //  always text to display and audio to play
     playAudio(key)
-    displayElement(text, 'p', [
-      "timeline-item",
-      "naration", 
-      "fade-in-down"
-    ]);
+    if (typeof text === 'string') {
+      displayNaration(text);
+    } else {
+      text.forEach((t) => displayNaration(t));
+    }
   
     //  redirect if faulty
     if (!next && !choices ) {
-      choices = [{
-        text: "Game Over",
-        next: "intro",
-      }];
+      choices = {
+        "intro": "Restart",
+      };
     }
 
     //  display possible choices
@@ -56,7 +58,6 @@ function start(events) {
     setTimeout(window.scrollTo, 2000, 0, document.body.scrollHeight);
   }
 
-  addEventListener("keydown", loop);
   addEventListener("click", loop);
 }
 

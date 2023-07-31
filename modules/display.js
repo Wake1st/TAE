@@ -6,23 +6,22 @@ const currentDecision = document.querySelector("#current-decision");
 const choicesContainer = document.querySelector("#choices");
 
 
+function displayChoice(text, parent) {
+  const summaryEl = document.createElement("p");
+  summaryEl.classList.add("choice-summary");
+  summaryEl.innerHTML = text;
+  parent.appendChild(summaryEl);
+}
+
 function createChoiceContainer({ text, next }) {
   const choiceContainer = document.createElement("div");
   choiceContainer.classList.add("choice-container");
 
-  //  TODO: check if text is array or string
+  //  check if text is array or string
   if (typeof text === 'string') {
-    const summaryEl = document.createElement("p");
-    summaryEl.classList.add("choice-summary");
-    summaryEl.innerHTML = text;
-    choiceContainer.appendChild(summaryEl);
+    displayChoice(text, choiceContainer);
   } else {
-    text.map((t) => {
-      const summaryEl = document.createElement("p");
-      summaryEl.classList.add("choice-summary");
-      summaryEl.innerHTML = t;
-      choiceContainer.appendChild(summaryEl);
-    })
+    text.forEach((t) => displayChoice(t, choiceContainer));
   }
 
   choiceContainer.addEventListener("click", () => {
@@ -47,34 +46,29 @@ function displayDecisions(choices) {
 
   //  insert choices
   choicesContainer.innerHTML = null;
-  choices.forEach((choice) => {
-    const con = createChoiceContainer(choice);
+  for (const [key,value] of Object.entries(choices)) {
+    const con = createChoiceContainer({
+      text: value,
+      next: key,
+    });
     choicesContainer.appendChild(con);
-  });
+  }
 }
 
-function displayElement(text, element, classes) {
-  const el = document.createElement(element);
+function displayNaration(text) {
+  const el = document.createElement('p');
   el.innerHTML = text;
-  el.classList.add(...classes);
+  el.classList.add(
+    "timeline-item",
+    "naration", 
+    "fade-in-down"
+  );
   timelineItems.appendChild(el);
-}
-
-function displayReset() {
-  const choices = [
-    {
-      text: "Game Over",
-      next: "intro",
-    },
-  ];
-
-  displayDecisions(choices);
 }
 
 export {
   timelineItems,
   choicesContainer,
-  bgMusic,
   displayDecisions,
-  displayElement,
+  displayNaration,
 };

@@ -1,25 +1,21 @@
-import path from 'path';
-
-
 const bgMusic = document.querySelector("#bgMusic");
 
 
 let audio = {};
 
 function loadAudio(data) {
-  //  TODO: rethink keys and values
-  const audioData = data.map(({ id, file }) => ({
-    [id]: new Audio(
-      path.join(__dirname, 'assets/audio', file)
-    ),
-  }));
-  console.log("audio data: ", audioData);
-
-  audio = {...audio, ...audioData};
+  for (const [key,value] of Object.entries(data)) {
+    audio = {
+      ...audio,
+      [key]: new Audio(
+        `../assets/audio/${value}`
+      ),
+    }
+  }
 }
 
-function playAudio(audioName) {
-  audio[audioName].play();
+function playAudio(key) {
+  audio[key].play();
 }
 
 export {
